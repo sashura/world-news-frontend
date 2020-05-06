@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>World-news</title>
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+    <header class="header header_main-page">
+        <h1 class="header__title">News explorer</h1>
+        <nav class="header__navigation">
+            <ul>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+        </nav>
+        <button class="header__button button button_unauth"></button>
+    </header>
+    <section class="search">
+        <h2 class="search__title"></h2>
+        <p class="search__text"></p>
+        <form class="search__form">
+            <input type="text" class="search__input">
+            <button class="button button_search">Искать</button>
+        </form>
+    </section>
+    <section class="news-list news-list_found">
+        <h2 class="news-list__title">Результаты поиска</h2>
+        <div class="news-list__cardlist">
+            <div class="news-list__card">
+                <img class="news-list__card_image">
+                <p class="news-list__card_date"></p>
+                <h3 class="news-list__card_title"></h3>
+                <p class="news-list__card_text"></p>
+                <a class="news-list__card_link"></a>
+            </div>
+            <div class="news-list__card">
+                <img class="news-list__card_image">
+                <p class="news-list__card_date"></p>
+                <h3 class="news-list__card_title"></h3>
+                <p class="news-list__card_text"></p>
+                <a class="news-list__card_link"></a>
+            </div>
+            <div class="news-list__card">
+                <img class="news-list__card_image">
+                <p class="news-list__card_date"></p>
+                <h3 class="news-list__card_title"></h3>
+                <p class="news-list__card_text"></p>
+                <a class="news-list__card_link"></a>
+            </div>
+            <button class="button button_cardlist">Показать еще</button>    
+        </div>
+    </section>
+    <section class="news-list news-list_notfound">
+        <img>
+        <h3 class="news-list_notfound_title">Ничего не найдено</h3>
+        <p class="news-list_notfound_message">К сожалению, по вашему запросу ничего не найдено</p>
+    </section>
+    <section class="about-author">
+        <div class="about-author__avatar">
+            <img class="about-author__image" alt="фотография автора">
+        </div>
+        <div class="about-author__info">
+            <h2 class="about-author__title"></h2>
+            <p class="about-author__text"></p>
+        </div>
+    </section>
+    <section class="news-list news-list_searchinprogress">
+        <p>тут будет плейлоудер</p>
+    </section>
+    <div class="popup popup__login">
+        <div class="popup__content">
+            <img class="popup__close">
+            <h3 class="popup__title">Вход</h3>
+            <form class="popup__form popup__login" name="login">
+                <p class="popup__text">Email</p>
+                <input type="email" name="email" placeholder="Введите почту">
+                <span></span>
+                <p class="popup__text">Пароль</p>
+                <input type="password" name="password" placeholder="Введите пароль">
+                <span></span>
+                <button class="button button_popup">Войти</button>
+            </form>
+            <p class="popup__text">или <a>Зарегистрироваться</a> </p>
+        </div>
+    </div>
+    <div class="popup popup__createuser">
+        <div class="popup__content">
+            <img class="popup__close">
+            <h3 class="popup__title">Регистрация</h3>
+            <form class="popup__form popup__createuser" name="createuser">
+                <p class="popup__text">Email</p>
+                <input type="email" name="email" placeholder="Введите почту">
+                <span></span>
+                <p class="popup__text">Пароль</p>
+                <input type="password" name="password" placeholder="Введите пароль">
+                <span></span>
+                <p class="popup__text">Имя</p>
+                <input type="text" name="username" placeholder="Введите своё имя">
+                <span></span>
+                <button class="button button_popup">Зарегистрироваться</button>
+            </form>
+            <p class="popup__text">или <a>Войти</a></p>
+        </div>
+    </div>
+    <div class="popup popup__successsignup">
+        <div class="popup__content">
+            <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+            <a>Выполнить вход</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__about"></p>
+        <nav class="footer__navigation">
+            <ul>
+                <li>Главная</li>
+                <li>Яндекс.Практикум</li>
+            </ul>
+        </nav>
+        <div class="footer__social-media">
+            <a class="social-media-icons" href=""><img class="" alt="github"></a>
+            <a class="social-media-icons" href=""><img class="" alt="facebook"></a>
+        </div>
+    </footer>
+    <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>
