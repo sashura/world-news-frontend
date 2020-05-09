@@ -52,6 +52,7 @@ module.exports = {
 
       template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
       filename: 'index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
+      chunks: ['index'],
     }),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),

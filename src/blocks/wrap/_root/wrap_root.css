@@ -1,0 +1,8 @@
+.wrap_root {
+    margin-left: 104px;
+    margin-right: 104px;
+}
+
+.wrap_root.news-list {
+    margin-bottom: 80px;
+}

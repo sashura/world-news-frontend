@@ -1,0 +1,13 @@
+.button_cardlist {
+    width: 288px;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 80px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 80px;
+
+}

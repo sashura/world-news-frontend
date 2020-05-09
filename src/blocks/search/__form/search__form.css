@@ -1,0 +1,9 @@
+.search__form {
+    display: flex;
+    border-radius: 100px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    position: relative;
+}

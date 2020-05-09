@@ -1,0 +1,13 @@
+.news-list__card_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+    margin: 0;
+    /*margin-top: 0;
+    margin-bottom: 18px;*/
+    max-height: 38%;
+    overflow: hidden;
+}

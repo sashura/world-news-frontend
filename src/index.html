@@ -5,125 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>World-news</title>
-  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
-    <header class="header header_main-page">
-        <h1 class="header__title">News explorer</h1>
-        <nav class="header__navigation">
-            <ul>
-                <li><a></a></li>
-                <li><a></a></li>
-            </ul>
-        </nav>
-        <button class="header__button button button_unauth"></button>
-    </header>
-    <section class="search">
-        <h2 class="search__title"></h2>
-        <p class="search__text"></p>
-        <form class="search__form">
-            <input type="text" class="search__input">
-            <button class="button button_search">Искать</button>
-        </form>
-    </section>
-    <section class="news-list news-list_found">
-        <h2 class="news-list__title">Результаты поиска</h2>
-        <div class="news-list__cardlist">
-            <div class="news-list__card">
-                <img class="news-list__card_image">
-                <p class="news-list__card_date"></p>
-                <h3 class="news-list__card_title"></h3>
-                <p class="news-list__card_text"></p>
-                <a class="news-list__card_link"></a>
+    <div class="wrap_root">
+        <div class="wrap_picture">
+            <header class="header header_main-page">
+                <h1 class="header__title">NewsExplorer</h1>
+                <div class="header__nav-block">
+                    <nav class="header__navigation">
+                        <ul class="header__nav-list">
+                            <li><a>Главная</a></li>
+                            <li><a>Сохраненные новости</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__button button button_unauth">Авторизоваться</button>
+                </div>
+           </header>
+            <section class="search">
+                <div class="search__content">
+                    <h2 class="search__title">Что в мире творится?</h2>
+                    <p class="search__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+                    <form class="search__form">
+                        <input type="text" class="search__input" placeholder="Введите тему новости">
+                        <button class="button button_search">Искать</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div class="wrap_background">
+            <section class="news-list wrap_root">
+                <div class="news-list__content_found">
+                    <h2 class="news-list__title">Результаты поиска</h2>
+                    <div class="news-list__cardlist">
+                        <div class="news-list__card">
+                            <div class="news-list__card_image-container">
+                                <img class="news-list__card_image" src="images/IMG_20190824_164316.jpg">
+                            </div>
+                            <p class="news-list__card_date">2 августа, 2019</p>
+                            <div class="news-list__card_text-container">
+                                <h3 class="news-list__card_title">Национальное достояние – парки</h3>
+                                <p class="news-list__card_text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                                <a class="news-list__card_link" href="http://www.lenta.ru" target="_blank">лента.ру</a>
+                            </div>
+                        </div>
+                        <div class="news-list__card">
+                            <div class="news-list__card_image-container">
+                                <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
+                            </div>
+                            <p class="news-list__card_date">2 августа, 2019</p>
+                            <div class="news-list__card_text-container">
+                                <h3 class="news-list__card_title">Лесные огоньки: история одной фотографии</h3>
+                                <p class="news-list__card_text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
+                                        из местных чудес природы.</p>
+                                <a class="news-list__card_link" href="www.meduza.io" target="_blank">медуза</a>
+                            </div> 
+                        </div>
+                        <div class="news-list__card">
+                            <div class="news-list__card_image-container">
+                                <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
+                            </div>
+                            <p class="news-list__card_date">2 августа, 2019</p>
+                            <div class="news-list__card_text-container">
+                                <h3 class="news-list__card_title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+                                <p class="news-list__card_text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                                <a class="news-list__card_link" href="www.ria.ru" target="_blank">риа</a>
+                            </div>
+                        </div>    
+                    </div>
+                    <button class="button button_cardlist">Показать еще</button>
+                </div>
+                <div class="news-list__content_notfound">
+                    <img>
+                    <h3 class="news-list_notfound_title">Ничего не найдено</h3>
+                    <p class="news-list_notfound_message">К сожалению, по вашему запросу ничего не найдено</p>
+                </div>
+                <div class="news-list__content_searchinprogress">
+                    <p>тут будет плейлоудер</p>
+                </div>     
+            </section>
+        </div>
+        <section class="about-author">
+            <div class="about-author__avatar">
+                <div class="wrap_height"></div>
+                    <img class="about-author__image" src="./images/IMG_20190824_172907.jpg" alt="фотография автора">
+                
             </div>
-            <div class="news-list__card">
-                <img class="news-list__card_image">
-                <p class="news-list__card_date"></p>
-                <h3 class="news-list__card_title"></h3>
-                <p class="news-list__card_text"></p>
-                <a class="news-list__card_link"></a>
+            <div class="about-author__info">
+                <h2 class="about-author__title">Об авторе</h2>
+                <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+ Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
             </div>
-            <div class="news-list__card">
-                <img class="news-list__card_image">
-                <p class="news-list__card_date"></p>
-                <h3 class="news-list__card_title"></h3>
-                <p class="news-list__card_text"></p>
-                <a class="news-list__card_link"></a>
+        </section>
+        <div class="popup popup__login">
+            <div class="popup__content">
+                <img class="popup__close" src="images/back.png">
+                <h3 class="popup__title">Вход</h3>
+                <form class="popup__form popup__login" name="login">
+                    <p class="popup__text">Email</p>
+                    <input class="popup__input" type="email" name="email" placeholder="Введите почту">
+                    <span></span>
+                    <p class="popup__text">Пароль</p>
+                    <input class="popup__input" type="password" name="password" placeholder="Введите пароль">
+                    <span></span>
+                    <button class="button popup__button">Войти</button>
+                </form>
+                <p class="popup__text-bottom"><span>или </span><a class="popup__text">Зарегистрироваться</a> </p>
             </div>
-            <button class="button button_cardlist">Показать еще</button>    
         </div>
-    </section>
-    <section class="news-list news-list_notfound">
-        <img>
-        <h3 class="news-list_notfound_title">Ничего не найдено</h3>
-        <p class="news-list_notfound_message">К сожалению, по вашему запросу ничего не найдено</p>
-    </section>
-    <section class="about-author">
-        <div class="about-author__avatar">
-            <img class="about-author__image" alt="фотография автора">
+        <div class="popup popup__createuser">
+            <div class="popup__content">
+                <img class="popup__close" src="images/back.png">
+                <h3 class="popup__title">Регистрация</h3>
+                <form class="popup__form popup__createuser" name="createuser">
+                    <p class="popup__text">Email</p>
+                    <input class="popup__input" type="email" name="email" placeholder="Введите почту">
+                    <span></span>
+                    <p class="popup__text">Пароль</p>
+                    <input class="popup__input" type="password" name="password" placeholder="Введите пароль">
+                    <span></span>
+                    <p class="popup__text">Имя</p>
+                    <input class="popup__input" type="text" name="username" placeholder="Введите своё имя">
+                    <span></span>
+                    <button class="button popup__button">Зарегистрироваться</button>
+                </form>
+                <p><span>или</span><a class="popup__text">Войти</a></p>
+            </div>
         </div>
-        <div class="about-author__info">
-            <h2 class="about-author__title"></h2>
-            <p class="about-author__text"></p>
+        <div class="popup popup__successsignup">
+            <div class="popup__content">
+                <img class="popup__close" src="images/back.png">
+                <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+                <a>Выполнить вход</a>
+            </div>
         </div>
-    </section>
-    <section class="news-list news-list_searchinprogress">
-        <p>тут будет плейлоудер</p>
-    </section>
-    <div class="popup popup__login">
-        <div class="popup__content">
-            <img class="popup__close">
-            <h3 class="popup__title">Вход</h3>
-            <form class="popup__form popup__login" name="login">
-                <p class="popup__text">Email</p>
-                <input type="email" name="email" placeholder="Введите почту">
-                <span></span>
-                <p class="popup__text">Пароль</p>
-                <input type="password" name="password" placeholder="Введите пароль">
-                <span></span>
-                <button class="button button_popup">Войти</button>
-            </form>
-            <p class="popup__text">или <a>Зарегистрироваться</a> </p>
-        </div>
+        <footer class="footer">
+            <p class="footer__about"></p>
+            <nav class="footer__navigation">
+                <ul>
+                    <li>Главная</li>
+                    <li>Яндекс.Практикум</li>
+                </ul>
+            </nav>
+            <div class="footer__social-media">
+                <a class="social-media-icons" href=""><img class="" alt="github"></a>
+                <a class="social-media-icons" href=""><img class="" alt="facebook"></a>
+            </div>
+        </footer>
     </div>
-    <div class="popup popup__createuser">
-        <div class="popup__content">
-            <img class="popup__close">
-            <h3 class="popup__title">Регистрация</h3>
-            <form class="popup__form popup__createuser" name="createuser">
-                <p class="popup__text">Email</p>
-                <input type="email" name="email" placeholder="Введите почту">
-                <span></span>
-                <p class="popup__text">Пароль</p>
-                <input type="password" name="password" placeholder="Введите пароль">
-                <span></span>
-                <p class="popup__text">Имя</p>
-                <input type="text" name="username" placeholder="Введите своё имя">
-                <span></span>
-                <button class="button button_popup">Зарегистрироваться</button>
-            </form>
-            <p class="popup__text">или <a>Войти</a></p>
-        </div>
-    </div>
-    <div class="popup popup__successsignup">
-        <div class="popup__content">
-            <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-            <a>Выполнить вход</a>
-        </div>
-    </div>
-    <footer class="footer">
-        <p class="footer__about"></p>
-        <nav class="footer__navigation">
-            <ul>
-                <li>Главная</li>
-                <li>Яндекс.Практикум</li>
-            </ul>
-        </nav>
-        <div class="footer__social-media">
-            <a class="social-media-icons" href=""><img class="" alt="github"></a>
-            <a class="social-media-icons" href=""><img class="" alt="facebook"></a>
-        </div>
-    </footer>
-    <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

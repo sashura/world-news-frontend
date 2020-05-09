@@ -1,0 +1,10 @@
+@import url(./__nav-block/header__nav-block.css);
+@import url(./__title/header__title.css);
+@import url(./__nav-list/header__nav-list.css);
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

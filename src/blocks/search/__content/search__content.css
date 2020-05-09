@@ -1,0 +1,5 @@
+.search__content {
+    display: flex;
+    flex-direction: column;
+    width: 42vw;
+}

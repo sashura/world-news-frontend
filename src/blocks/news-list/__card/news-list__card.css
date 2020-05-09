@@ -1,0 +1,16 @@
+@import url(./_image/news-list__card_image.css);
+@import url(./_image-container/news-list__card_image-container.css);
+@import url(./_date/news-list__card_date.css);
+@import url(./_title/news-list__card_title.css);
+@import url(./_text/news-list__card_text.css);
+@import url(./_link/news-list__card_link.css);
+@import url(./_text-container/news-list__card_text-container.css);
+
+.news-list__card {
+    display: flex;
+    flex-direction: column;
+    max-width: calc((100% - 32px)/3);
+    height: 576px;
+    background-color: #fff;
+    border-radius: 16px;
+}
