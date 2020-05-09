@@ -8,6 +8,7 @@
 @import url(./__text/popup__text.css);
 @import url(./__inner/popup__inner.css);
 @import url(./__text-bottom/popup__rext-bottom.css);
+@import url(./__redirect-login/popup__redirect-login.css);
 
 .popup {
   position: fixed;
@@ -20,12 +21,5 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-}
-
-.popup.popup__successsignup {
-  display: none;
-}
-
-.popup.popup__createuser {
   display: none;
 }

@@ -1,0 +1,13 @@
+@import url(./__about/footer__about.css);
+@import url(./__nav-list/footer__nav-list.css);
+@import url(./__navigation/footer__navigation.css);
+@import url(./__link/footer__link.css);
+@import url(./__social-media-icon/footer__social-media-icon.css);
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}

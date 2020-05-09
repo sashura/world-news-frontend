@@ -1,13 +1,22 @@
 .button_cardlist {
     width: 288px;
     height: 64px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 80px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 80px;
-
+    margin: 0 auto 0 auto;
 }
+
+.button_cardlist:hover {
+    opacity: 0.9;
+}
+
+.button_cardlist:active {
+    border: none;
+    outline: none;
+}
+

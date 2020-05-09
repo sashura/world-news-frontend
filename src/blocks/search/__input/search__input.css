@@ -4,6 +4,18 @@
     height: 22px;
     border: 0;
     width: 300px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+    caret-color: #2F71E5;
+}
+
+.search__input:focus {
+    border: none;
+    outline: none;
 }
 
 .search__input::-webkit-input-placeholder{

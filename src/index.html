@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>World-news</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./pages/index.css">
 </head>
 <body>
     <div class="wrap_root">
         <div class="wrap_picture">
             <header class="header header_main-page">
-                <h1 class="header__title">NewsExplorer</h1>
+                <h1 class="header__title header__title_main">NewsExplorer</h1>
                 <div class="header__nav-block">
                     <nav class="header__navigation">
                         <ul class="header__nav-list">
-                            <li><a>Главная</a></li>
-                            <li><a>Сохраненные новости</a></li>
+                            <li><a class="header__link header__link_main">Главная</a></li>
+                            <li><a class="header__link header__link_main" href="saved-news.html">Сохраненные новости</a></li>
                         </ul>
                     </nav>
                     <button class="header__button button button_unauth">Авторизоваться</button>
@@ -59,7 +59,7 @@
                                 <h3 class="news-list__card_title">Лесные огоньки: история одной фотографии</h3>
                                 <p class="news-list__card_text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
                                         из местных чудес природы.</p>
-                                <a class="news-list__card_link" href="www.meduza.io" target="_blank">медуза</a>
+                                <a class="news-list__card_link" href="http://www.meduza.io" target="_blank">медуза</a>
                             </div> 
                         </div>
                         <div class="news-list__card">
@@ -70,11 +70,36 @@
                             <div class="news-list__card_text-container">
                                 <h3 class="news-list__card_title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
                                 <p class="news-list__card_text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                                <a class="news-list__card_link" href="www.ria.ru" target="_blank">риа</a>
+                                <a class="news-list__card_link" href="http://www.ria.ru" target="_blank">риа</a>
                             </div>
-                        </div>    
+                        </div>
+                        <div class="news-list__card hidden">
+                                <div class="news-list__card_image-container">
+                                    <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
+                                </div>
+                                <p class="news-list__card_date">2 августа, 2019</p>
+                                <div class="news-list__card_text-container">
+                                    <h3 class="news-list__card_title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+                                    <p class="news-list__card_text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                                    <a class="news-list__card_link" href="http://www.ria.ru" target="_blank">риа</a>
+                                </div>
+                        </div>
+                        <div class="news-list__card hidden">
+                                <div class="news-list__card_image-container">
+                                    <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
+                                </div>
+                                <p class="news-list__card_date">2 августа, 2019</p>
+                                <div class="news-list__card_text-container">
+                                    <h3 class="news-list__card_title">Лесные огоньки: история одной фотографии</h3>
+                                    <p class="news-list__card_text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
+                                            из местных чудес природы.</p>
+                                    <a class="news-list__card_link" href="http://www.meduza.io" target="_blank">медуза</a>
+                                </div> 
+                            </div>    
                     </div>
-                    <button class="button button_cardlist">Показать еще</button>
+                    <div class="wrap_bottom">
+                        <button class="button button_cardlist">Показать еще</button>
+                    </div>
                 </div>
                 <div class="news-list__content_notfound">
                     <img>
@@ -111,7 +136,7 @@
                     <span></span>
                     <button class="button popup__button">Войти</button>
                 </form>
-                <p class="popup__text-bottom"><span>или </span><a class="popup__text">Зарегистрироваться</a> </p>
+                <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#createuser" id="link-createuser">Зарегистрироваться</a> </p>
             </div>
         </div>
         <div class="popup popup__createuser">
@@ -130,30 +155,30 @@
                     <span></span>
                     <button class="button popup__button">Зарегистрироваться</button>
                 </form>
-                <p><span>или</span><a class="popup__text">Войти</a></p>
+                <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#login" id="link-login">Войти</a></p>
             </div>
         </div>
         <div class="popup popup__successsignup">
             <div class="popup__content">
                 <img class="popup__close" src="images/back.png">
                 <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-                <a>Выполнить вход</a>
+                <a class="popup__redirect-login" name="login">Выполнить вход</a>
             </div>
         </div>
         <footer class="footer">
-            <p class="footer__about"></p>
+            <p class="footer__about">&copy; 2020 Supersite, Powered by News API</p>
             <nav class="footer__navigation">
-                <ul>
-                    <li>Главная</li>
-                    <li>Яндекс.Практикум</li>
+                <ul class=footer__nav-list>
+                    <li><a class="footer__link" href="index.html">Главная</a></li>
+                    <li><a class="footer__link" href="http://yandex.praktikum.ru">Яндекс.Практикум</a></li>
                 </ul>
+                <div class="footer__social-media">
+                    <a href="https://github.com/sashura/world-news-frontend" target="_blank"><img class="footer__social-media-icon" src="images/github.svg" alt="github"></a>
+                    <a href="http://facebook.com" target="_blank"><img class="footer__social-media-icon" src="images/facebook.svg" alt="facebook"></a>
+                </div>
             </nav>
-            <div class="footer__social-media">
-                <a class="social-media-icons" href=""><img class="" alt="github"></a>
-                <a class="social-media-icons" href=""><img class="" alt="facebook"></a>
-            </div>
         </footer>
     </div>
-    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+    <script src="index.js"></script>
 </body>
 </html>
