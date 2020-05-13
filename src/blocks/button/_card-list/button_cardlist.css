@@ -20,3 +20,14 @@
     outline: none;
 }
 
+@media screen and (max-width: 780px) and (min-width: 428px) {
+    .button_cardlist {
+        margin-top: 22px;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .button_cardlist {
+        margin-top: 15px;
+    }
+}

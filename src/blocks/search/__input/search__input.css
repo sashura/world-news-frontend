@@ -1,9 +1,9 @@
 .search__input {
     margin-left: 24px;
-    margin-right: 40px;
+    margin-right: 32px;
     height: 22px;
     border: 0;
-    width: 300px;
+    max-width: 50%;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -61,4 +61,14 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+}
+
+@media screen and (max-width:520px) {
+    .search__input {
+        max-width: 100%;
+        height: 56px;
+        border-radius: 100px;
+        margin: 0;
+        padding-left: 15px;
+    }
 }

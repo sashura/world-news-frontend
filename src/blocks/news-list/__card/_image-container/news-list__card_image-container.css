@@ -1,4 +1,7 @@
 .news-list__card_image-container {
-    height: 272px;
     max-width: 100%;
+    position: relative;
+    padding-top: 68%;
+    display: block;
 }
+

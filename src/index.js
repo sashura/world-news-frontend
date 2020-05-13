@@ -1,6 +1,6 @@
 const popupClose = document.querySelector('.popup__close');
 const popupLogin = document.querySelector('.popup__login');
-const buttonLogin = document.querySelector('.button_unauth');
+const buttonLogin = document.querySelector('.header__button');
 const popupButton = document.querySelector('.popup__button');
 const popupSuccess = document.querySelector('.popup__successsignup');
 const linkCreateUser = document.getElementById('link-createuser');
@@ -9,9 +9,41 @@ const linkLogin = document.getElementById('link-login');
 const buttonCardList = document.querySelector('.button_cardlist');
 const hiddenCards = document.querySelectorAll('.hidden');
 const popupInput = document.querySelector('.popup__input');
+const helpMessage = document.querySelector('.news-list__card_help-message');
+const cardIcon = document.querySelector('.news-list__card_icon');
+const markIcon = document.querySelectorAll('.news-list__card_icon_mark-icon');
+const menuButtonHeader = document.querySelector('.header__menu-icon');
+const menuHeader = document.querySelector('.header__nav-block');
+const header = document.querySelector('.header');
+const menuHeaderClose = document.querySelector('.header__menu-icon_close');
+
+menuButtonHeader.addEventListener('click', () => {
+  if (menuButtonHeader.classList.value === 'header__menu-icon header__menu-icon_white header__menu-icon_close') {
+    menuHeader.classList.remove('header__nav-block_is-opened');
+    header.style.backgroundColor = '';
+    menuButtonHeader.style.backgroundImage = 'url(./images/menu.svg)';
+    menuButtonHeader.classList.remove('header__menu-icon_close');
+  } else if (menuButtonHeader.classList.value === 'header__menu-icon header__menu-icon_close-white') {
+    menuHeader.classList.remove('header__nav-block_is-opened');
+    header.style.backgroundColor = '';
+    menuButtonHeader.style.backgroundImage = 'url(./images/menu_savenews.svg)';
+    menuButtonHeader.classList.remove('header__menu-icon_close');
+  } else if (menuButtonHeader.classList.value === 'header__menu-icon header__menu-icon_white') {
+    menuHeader.classList.add('header__nav-block_is-opened');
+    header.style.backgroundColor = '#1A1B22';
+    menuButtonHeader.style.backgroundImage = 'url(./images/back.svg)';
+    menuButtonHeader.classList.add('header__menu-icon_close');
+  } else if (menuButtonHeader.classList.value === 'header__menu-icon header__menu-icon_black') {
+    menuHeader.classList.add('header__nav-block_is-opened');
+    header.style.backgroundColor = '#ffffff';
+    menuButtonHeader.classList.add('header__menu-icon_close');
+  }
+});
+
 
 buttonLogin.addEventListener('click', () => {
   popupLogin.classList.add('popup_is-opened');
+  header.style.backgroundColor = '';
 });
 
 popupClose.addEventListener('click', () => {
@@ -44,4 +76,18 @@ buttonCardList.addEventListener('click', () => {
 
 popupInput.addEventListener('input', () => {
   popupButton.classList.add('popup__button_active');
+});
+
+cardIcon.addEventListener('mouseover', () => {
+  helpMessage.classList.add('news-list__card_help-message_is-opened');
+});
+
+cardIcon.addEventListener('mouseout', () => {
+  helpMessage.classList.remove('news-list__card_help-message_is-opened');
+});
+
+markIcon.forEach((item) => {
+  item.addEventListener('click', () => {
+    event.target.style.backgroundImage = 'url(./images/mark_active.svg)';
+  });
 });

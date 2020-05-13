@@ -9,3 +9,10 @@
     flex-direction: row;
     width: calc(100vw - 208px);
 }
+
+@media screen and (max-width: 480px) {
+    .about-author {
+        flex-direction: column;
+        width: calc(100vw - 48px);
+    }
+}

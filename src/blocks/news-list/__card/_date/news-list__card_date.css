@@ -9,3 +9,9 @@
     margin: 20px 0 12px 24px;
     max-width: 80%;
 }
+
+@media screen and (max-width: 780px) {
+    .news-list__card_date {
+        margin: 16px 0 10px 16px;
+    }
+}

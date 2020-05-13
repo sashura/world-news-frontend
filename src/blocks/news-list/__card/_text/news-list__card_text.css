@@ -8,6 +8,8 @@
     margin: 0;
     /*margin-top: 0;
     margin-bottom: 18px;*/
-    max-height: 38%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
     overflow: hidden;
 }

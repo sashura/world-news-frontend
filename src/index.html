@@ -5,22 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>World-news</title>
-  <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./pages/normalize.css">
   <link rel="stylesheet" type="text/css" href="./pages/index.css">
 </head>
 <body>
-    <div class="wrap_root">
+
         <div class="wrap_picture">
-            <header class="header header_main-page">
-                <h1 class="header__title header__title_main">NewsExplorer</h1>
-                <div class="header__nav-block">
-                    <nav class="header__navigation">
-                        <ul class="header__nav-list">
-                            <li><a class="header__link header__link_main">Главная</a></li>
-                            <li><a class="header__link header__link_main" href="saved-news.html">Сохраненные новости</a></li>
-                        </ul>
+            <header class="header wrap header_main-page">
+                <div class="header__title-block">
+                    <h1 class="header__title header__title_main">NewsExplorer</h1>
+                    <div class="header__menu-icon header__menu-icon_white"></div>
+                </div>
+                <div class="header__nav-block header__nav-block_black wrap_background_nav-block">
+                    <nav class="header__navigation header__navigaton_black">
+                        <div class="header__nav-list">
+                            <div>
+                                <a class="header__link header__link_main">Главная</a>
+                                <div class="header__underline">_________</div>
+                            </div>    
+                            <a class="header__link header__link_main" href="saved-news.html">Сохраненные статьи</a>
+                            <div class="header__button header__button_main">Авторизоваться</div>
+                        </div>
                     </nav>
-                    <button class="header__button button button_unauth">Авторизоваться</button>
                 </div>
            </header>
             <section class="search">
@@ -34,12 +40,17 @@
                 </div>
             </section>
         </div>
-        <div class="wrap_background">
-            <section class="news-list wrap_root">
+        <div class="wrap_root">
+        <div class="wrap_background wrap_background_main">
+            <section class="news-list">
                 <div class="news-list__content_found">
                     <h2 class="news-list__title">Результаты поиска</h2>
                     <div class="news-list__cardlist">
                         <div class="news-list__card">
+                            <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                            <div class="news-list__card_help-message news-list__card_help-message_saved">
+                                    <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                            </div>
                             <div class="news-list__card_image-container">
                                 <img class="news-list__card_image" src="images/IMG_20190824_164316.jpg">
                             </div>
@@ -52,6 +63,10 @@
                         </div>
                         <div class="news-list__card">
                             <div class="news-list__card_image-container">
+                                <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                                <div class="news-list__card_help-message news-list__card_help-message_saved">
+                                    <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                                </div>    
                                 <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
                             </div>
                             <p class="news-list__card_date">2 августа, 2019</p>
@@ -64,6 +79,10 @@
                         </div>
                         <div class="news-list__card">
                             <div class="news-list__card_image-container">
+                                <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                                <div class="news-list__card_help-message news-list__card_help-message_saved">
+                                    <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                                </div>
                                 <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
                             </div>
                             <p class="news-list__card_date">2 августа, 2019</p>
@@ -75,6 +94,10 @@
                         </div>
                         <div class="news-list__card hidden">
                                 <div class="news-list__card_image-container">
+                                    <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                                    <div class="news-list__card_help-message news-list__card_help-message_saved">
+                                        <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                                    </div>
                                     <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
                                 </div>
                                 <p class="news-list__card_date">2 августа, 2019</p>
@@ -86,6 +109,10 @@
                         </div>
                         <div class="news-list__card hidden">
                                 <div class="news-list__card_image-container">
+                                    <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                                    <div class="news-list__card_help-message news-list__card_help-message_saved">
+                                        <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                                    </div>
                                     <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
                                 </div>
                                 <p class="news-list__card_date">2 августа, 2019</p>
@@ -97,9 +124,7 @@
                                 </div> 
                             </div>    
                     </div>
-                    <div class="wrap_bottom">
                         <button class="button button_cardlist">Показать еще</button>
-                    </div>
                 </div>
                 <div class="news-list__content_notfound">
                     <img>
@@ -111,12 +136,8 @@
                 </div>     
             </section>
         </div>
-        <section class="about-author">
-            <div class="about-author__avatar">
-                <div class="wrap_height"></div>
-                    <img class="about-author__image" src="./images/IMG_20190824_172907.jpg" alt="фотография автора">
-                
-            </div>
+        <section class="about-author wrap">
+            <img class="about-author__image" src="./images/IMG_20190824_172907.jpg" alt="фотография автора">
             <div class="about-author__info">
                 <h2 class="about-author__title">Об авторе</h2>
                 <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
@@ -165,7 +186,7 @@
                 <a class="popup__redirect-login" name="login">Выполнить вход</a>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer wrap">
             <p class="footer__about">&copy; 2020 Supersite, Powered by News API</p>
             <nav class="footer__navigation">
                 <ul class=footer__nav-list>
@@ -173,8 +194,8 @@
                     <li><a class="footer__link" href="http://yandex.praktikum.ru">Яндекс.Практикум</a></li>
                 </ul>
                 <div class="footer__social-media">
-                    <a href="https://github.com/sashura/world-news-frontend" target="_blank"><img class="footer__social-media-icon" src="images/github.svg" alt="github"></a>
-                    <a href="http://facebook.com" target="_blank"><img class="footer__social-media-icon" src="images/facebook.svg" alt="facebook"></a>
+                    <a class="footer__social-media-icon" href="https://github.com/sashura/world-news-frontend" target="_blank"><img class="footer__icon-image" src="images/github.svg" alt="github"></a>
+                    <a class="footer__social-media-icon" href="http://facebook.com" target="_blank"><img class="footer__icon-image" src="images/facebook.svg" alt="facebook"></a>
                 </div>
             </nav>
         </footer>

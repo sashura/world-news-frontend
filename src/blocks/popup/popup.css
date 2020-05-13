@@ -23,3 +23,9 @@
   z-index: 1;
   display: none;
 }
+
+@media screen and (max-width: 520px) {
+  .popup {
+    top: 42px;
+  }
+}

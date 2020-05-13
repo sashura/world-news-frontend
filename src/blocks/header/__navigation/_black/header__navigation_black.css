@@ -1,0 +1,7 @@
+@media screen and (max-width: 540px) {
+    .header__navigaton_black {
+        background-color: #1A1B22;    
+        width: 100%;
+        border-radius: 0 0 16px 16px;
+    }
+}

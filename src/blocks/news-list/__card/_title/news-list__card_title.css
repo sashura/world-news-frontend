@@ -5,9 +5,19 @@
     font-size: 26px;
     line-height: 30px;
     color: #1A1B22;
-    /*margin-top: 0;
-    margin-bottom: 16px;*/
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    /*max-height: 97px;*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     overflow: hidden;
-    max-height: 90px;
+}
+
+@media screen and (max-width: 780px) {
+    .news-list__card_title {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
 }

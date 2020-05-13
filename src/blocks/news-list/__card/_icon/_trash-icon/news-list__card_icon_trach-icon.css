@@ -1,0 +1,8 @@
+.news-list__card_icon_trach-icon {
+    background-image: url(../../../../../images/trash.svg);
+}
+
+
+.news-list__card_icon_trach-icon:hover {
+    background-image: url(../../../../../images/trash_hover.svg);
+}

@@ -1,8 +1,18 @@
 .wrap_root {
-    margin-left: 104px;
     margin-right: 104px;
+    margin-left: 104px;
 }
 
-.wrap_root.news-list {
-    margin-bottom: 80px;
+@media screen and (min-width: 479px) and (max-width: 920px) {
+    .wrap_root {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .wrap_root {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
 }

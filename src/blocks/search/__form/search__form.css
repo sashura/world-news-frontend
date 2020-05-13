@@ -2,8 +2,19 @@
     display: flex;
     border-radius: 100px;
     background-color: #fff;
-    align-items: center;
     justify-content: space-between;
-    height: 64px;
     position: relative;
+}
+
+@media screen and (min-width:520px) {
+    .search__form {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .search__form {
+        background-color: transparent;
+        flex-direction: column;
+    }
 }

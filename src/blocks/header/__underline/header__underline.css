@@ -1,0 +1,24 @@
+@import url(./_savenews/header__underline_savenews.css);
+
+.header__underline {
+    position: absolute;
+    top: 62px;
+}
+
+@media screen and (max-width: 920px) and (min-width: 620px) {
+    .header__underline {
+        top: 58px;
+    }
+}
+
+@media screen and (max-width: 620px) and (min-width: 541px) {
+    .header__underline {
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header__underline {
+        display: none;
+    }
+}

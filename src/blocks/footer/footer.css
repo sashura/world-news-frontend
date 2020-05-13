@@ -3,11 +3,20 @@
 @import url(./__navigation/footer__navigation.css);
 @import url(./__link/footer__link.css);
 @import url(./__social-media-icon/footer__social-media-icon.css);
-
+@import url(./__social-media/footer__social-media.css);
+@import url(./__icon-image/footer__icon-image.css);
 
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100vw - 208px);
+    align-items: center;
+    display: none;
+}
+
+@media screen and (max-width: 478px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
 }

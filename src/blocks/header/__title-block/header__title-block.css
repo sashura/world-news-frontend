@@ -1,0 +1,12 @@
+.header__title-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 540px) {
+    .header__title-block {
+        width: 100%;
+    }
+}

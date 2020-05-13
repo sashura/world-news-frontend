@@ -1,5 +1,29 @@
+@import url(./_main/wrap_background_main.css);
+@import url(./_savenews/wrap_background_savenews.css);
+@import url(./_nav-block/wrap_background_nav-block.css);
+
 .wrap_background {
     background-color: #F5F6F7;
     margin-left: -104px;
     margin-right: -104px;
+    padding-left: 104px;
+    padding-right: 104px;
+}
+
+@media screen and (min-width: 479px) and (max-width: 920px) {
+    .wrap_background {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .wrap_background {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }

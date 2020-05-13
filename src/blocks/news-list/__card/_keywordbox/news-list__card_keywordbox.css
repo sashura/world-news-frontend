@@ -1,0 +1,11 @@
+.news-list__card_keywordbox {
+    width: 88px;
+    height: 40px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    border-radius: 10px;
+    background-color: #fff;
+    align-content: center;
+    display: flex;
+}
