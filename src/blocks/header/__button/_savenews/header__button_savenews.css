@@ -1,3 +1,5 @@
 .header__button_savenews {
-    border: 1px solid #1A1B22;;
+    align-content: center;
+    border: 1px solid #1A1B22;
+    color: #1A1B22;
 }

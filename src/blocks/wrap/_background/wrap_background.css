@@ -1,6 +1,5 @@
 @import url(./_main/wrap_background_main.css);
 @import url(./_savenews/wrap_background_savenews.css);
-@import url(./_nav-block/wrap_background_nav-block.css);
 
 .wrap_background {
     background-color: #F5F6F7;

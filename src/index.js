@@ -46,9 +46,6 @@ buttonLogin.addEventListener('click', () => {
   header.style.backgroundColor = '';
 });
 
-popupClose.addEventListener('click', () => {
-  popupLogin.classList.remove('popup_is-opened');
-});
 
 popupButton.addEventListener('click', (event) => {
   event.preventDefault();
@@ -90,4 +87,8 @@ markIcon.forEach((item) => {
   item.addEventListener('click', () => {
     event.target.style.backgroundImage = 'url(./images/mark_active.svg)';
   });
+});
+
+popupClose.addEventListener('click', () => {
+  popupLogin.classList.remove('popup_is-opened');
 });

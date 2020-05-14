@@ -8,6 +8,7 @@
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/info/info.css);
+@import url(../blocks/preloader/preloader.css);
 
 body {
     margin: 0;

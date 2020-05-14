@@ -1,3 +1,7 @@
 .news-list__content_notfound {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 86px;
 }

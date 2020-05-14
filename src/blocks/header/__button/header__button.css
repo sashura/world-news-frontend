@@ -1,5 +1,7 @@
 @import url(./_main/header__button_main.css);
 @import url(./_savenews/header__button_savenews.css);
+@import url(./_user-name/button_user-name.css);
+@import url(./_icon/header__button_icon.css);
 
 .header__button {
     display: flex;
@@ -29,8 +31,8 @@
     }
 }
 
-@media screen and (min-width: 479px) and (max-width: 620px) {
+@media screen and (min-width: 541px) and (max-width: 790px) {
     .header__button {
-        font-size: 12px;
+        font-size: 16px;
     }
 }

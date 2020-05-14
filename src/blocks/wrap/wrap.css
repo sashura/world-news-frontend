@@ -2,33 +2,6 @@
 @import url(./_root/wrap_root.css);
 @import url(./_background/wrap_background.css);
 @import url(./_header/wrap_header.css);
-
-.wrap.about-author {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-@media screen and (max-width: 980px) and (min-width: 481px) {
-    .wrap.about-author {
-        margin-top: 40px;
-        margin-bottom: 60px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .wrap.about-author {
-        margin-top: 32px;
-        margin-bottom: 80px;
-    }
-}
-
-.wrap.info {
-    padding-top: 40px;
-    padding-bottom: 56px;
-}
-
-.wrap.footer {
-    padding-bottom: 26px;
-    padding-top: 32px;
-}
+@import url(./_about-author/wrap_about-autor.css);
+@import url(./_info/wrap_info.css);
 
