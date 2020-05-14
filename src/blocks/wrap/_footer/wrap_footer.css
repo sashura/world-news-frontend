@@ -1,4 +1,15 @@
-.wrap.footer {
-    padding-bottom: 26px;
-    padding-top: 32px;
+.wrap_footer {
+    padding: 32px 104px 26px 104px;
+}
+
+@media screen and (min-width: 479px) and (max-width: 920px) {
+    .wrap_footer {
+        padding: 24px 40px 20px 40px;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .wrap_footer {
+        padding: 20px 16px 21px 16px;
+    }
 }

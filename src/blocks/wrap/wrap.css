@@ -1,7 +1,6 @@
 @import url(./_picture/wrap_picture.css);
 @import url(./_root/wrap_root.css);
-@import url(./_background/wrap_background.css);
 @import url(./_header/wrap_header.css);
-@import url(./_about-author/wrap_about-autor.css);
-@import url(./_info/wrap_info.css);
+@import url(./_footer/wrap_footer.css);
+
 

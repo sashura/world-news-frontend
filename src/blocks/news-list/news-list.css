@@ -2,3 +2,7 @@
 @import url(./__content/news-list__content.css);
 @import url(./__cardlist/news-list__cardlist.css);
 @import url(./__title/news-list__title.css);
+
+.news-list {
+    background-color: #F5F6F7;
+}

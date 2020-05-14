@@ -11,3 +11,9 @@
     -webkit-line-clamp: 5;
     overflow: hidden;
 }
+
+@media screen and (max-width: 748px) {
+    .news-list__card_text {
+        -webkit-line-clamp: 4;
+    }
+}

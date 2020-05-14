@@ -1,206 +1,220 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>World-news</title>
-  <link rel="stylesheet" type="text/css" href="./pages/normalize.css">
-  <link rel="stylesheet" type="text/css" href="./pages/index.css">
-</head>
-<body>
 
-        <div class="wrap_picture">
-            <header class="header wrap header_main-page">
-                <div class="header__title-block">
-                    <h1 class="header__title header__title_main">NewsExplorer</h1>
-                    <div class="header__menu-icon header__menu-icon_white"></div>
-                </div>
-                <div class="header__nav-block header__nav-block_black wrap_background_nav-block">
-                    <nav class="header__navigation header__navigaton_black">
-                        <div class="header__nav-list">
-                            <div>
-                                <a class="header__link header__link_main" href="index.html">Главная</a>
-                                <div class="header__underline">_________</div>
-                            </div>    
-                            <a class="header__link header__link_main" href="saved-news.html">Сохраненные статьи</a>
-                            <div class="header__button header__button_main">Авторизоваться</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World-news</title>
+    <link rel="stylesheet" type="text/css" href="./pages/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./pages/index.css">
+</head>
+
+<body>
+    <div class="wrap_picture">
+        <header class="header wrap_header header_main-page">
+            <div class="header__title-block">
+                <h1 class="header__title header__title_main">NewsExplorer</h1>
+                <div class="header__menu-icon header__menu-icon_white"></div>
+            </div>
+            <div class="header__nav-block header__nav-block_black wrap_background_nav-block">
+                <nav class="header__navigation header__navigaton_black">
+                    <div class="header__nav-list">
+                        <div class="header__link-container">
+                            <a class="header__link header__link_main" href="index.html">Главная</a>
+                            <div class="header__underline">_________</div>
                         </div>
-                    </nav>
-                </div>
-           </header>
-            <section class="search">
-                <div class="search__content">
-                    <h2 class="search__title">Что в мире творится?</h2>
-                    <p class="search__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-                    <form class="search__form">
-                        <input type="text" class="search__input" placeholder="Введите тему новости">
-                        <button class="button button_search">Искать</button>
-                    </form>
-                </div>
-            </section>
-        </div>
-        <div class="wrap_root">
-        <div class="wrap_background wrap_background_main">
-            <section class="news-list">
-                <div class="news-list__content_found">
-                    <h2 class="news-list__title">Результаты поиска</h2>
-                    <div class="news-list__cardlist">
-                        <div class="news-list__card">
-                            <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
-                            <div class="news-list__card_help-message news-list__card_help-message_saved">
-                                    <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-                            </div>
-                            <div class="news-list__card_image-container">
-                                <img class="news-list__card_image" src="images/IMG_20190824_164316.jpg">
-                            </div>
-                            <p class="news-list__card_date">2 августа, 2019</p>
-                            <div class="news-list__card_text-container">
-                                <h3 class="news-list__card_title">Национальное достояние – парки</h3>
-                                <p class="news-list__card_text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                                <a class="news-list__card_link" href="http://www.lenta.ru" target="_blank">лента.ру</a>
-                            </div>
-                        </div>
-                        <div class="news-list__card">
-                            <div class="news-list__card_image-container">
-                                <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
-                                <div class="news-list__card_help-message news-list__card_help-message_saved">
-                                    <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-                                </div>    
-                                <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
-                            </div>
-                            <p class="news-list__card_date">2 августа, 2019</p>
-                            <div class="news-list__card_text-container">
-                                <h3 class="news-list__card_title">Лесные огоньки: история одной фотографии</h3>
-                                <p class="news-list__card_text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
-                                        из местных чудес природы.</p>
-                                <a class="news-list__card_link" href="http://www.meduza.io" target="_blank">медуза</a>
-                            </div> 
-                        </div>
-                        <div class="news-list__card">
-                            <div class="news-list__card_image-container">
-                                <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
-                                <div class="news-list__card_help-message news-list__card_help-message_saved">
-                                    <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-                                </div>
-                                <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
-                            </div>
-                            <p class="news-list__card_date">2 августа, 2019</p>
-                            <div class="news-list__card_text-container">
-                                <h3 class="news-list__card_title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                                <p class="news-list__card_text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                                <a class="news-list__card_link" href="http://www.ria.ru" target="_blank">риа</a>
-                            </div>
-                        </div>
-                        <div class="news-list__card hidden">
-                                <div class="news-list__card_image-container">
-                                    <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
-                                    <div class="news-list__card_help-message news-list__card_help-message_saved">
-                                        <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-                                    </div>
-                                    <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
-                                </div>
-                                <p class="news-list__card_date">2 августа, 2019</p>
-                                <div class="news-list__card_text-container">
-                                    <h3 class="news-list__card_title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                                    <p class="news-list__card_text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                                    <a class="news-list__card_link" href="http://www.ria.ru" target="_blank">риа</a>
-                                </div>
-                        </div>
-                        <div class="news-list__card hidden">
-                                <div class="news-list__card_image-container">
-                                    <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
-                                    <div class="news-list__card_help-message news-list__card_help-message_saved">
-                                        <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-                                    </div>
-                                    <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
-                                </div>
-                                <p class="news-list__card_date">2 августа, 2019</p>
-                                <div class="news-list__card_text-container">
-                                    <h3 class="news-list__card_title">Лесные огоньки: история одной фотографии</h3>
-                                    <p class="news-list__card_text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
-                                            из местных чудес природы.</p>
-                                    <a class="news-list__card_link" href="http://www.meduza.io" target="_blank">медуза</a>
-                                </div> 
-                            </div>    
+                        <a class="header__link header__link_main" href="saved-news.html">Сохраненные статьи</a>
+                        <div class="header__button header__button_main">Авторизоваться</div>
                     </div>
-                        <button class="button button_cardlist">Показать еще</button>
-                </div>
-                <div class="news-list__content_notfound">
-                    <img src="images/not-found_v1.svg" alt="not-found">
-                    <h3 class="news-list__content_notfound-title">Ничего не найдено</h3>
-                    <p class="news-list__content_notfound-message">К сожалению, по вашему запросу ничего не найдено</p>
-                </div>
-                <div class="news-list__content_searchinprogress">
-                    <div class="circle-preloader"></div>
-                    <p class="news-list__content_notfound-message">Идет поиск новостей...</p>
-                </div>     
-            </section>
-        </div>
-        <section class="about-author wrap">
-            <img class="about-author__image" src="./images/IMG_20190824_172907.jpg" alt="фотография автора">
-            <div class="about-author__info">
-                <h2 class="about-author__title">Об авторе</h2>
-                <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
- Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+                </nav>
+            </div>
+        </header>
+        <section class="search wrap_root">
+            <div class="search__content">
+                <h2 class="search__title">Что в мире творится?</h2>
+                <p class="search__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
+                </p>
+                <form class="search__form">
+                    <input type="text" class="search__input" placeholder="Введите тему новости">
+                    <button class="button button_search">Искать</button>
+                </form>
             </div>
         </section>
-        <div class="popup popup__login">
-            <div class="popup__content">
-                <img class="popup__close" src="images/back.png">
-                <h3 class="popup__title">Вход</h3>
-                <form class="popup__form popup__login" name="login">
-                    <p class="popup__text">Email</p>
-                    <input class="popup__input" type="email" name="email" placeholder="Введите почту">
-                    <span></span>
-                    <p class="popup__text">Пароль</p>
-                    <input class="popup__input" type="password" name="password" placeholder="Введите пароль">
-                    <span></span>
-                    <button class="button popup__button">Войти</button>
-                </form>
-                <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#createuser" id="link-createuser">Зарегистрироваться</a> </p>
-            </div>
-        </div>
-        <div class="popup popup__createuser">
-            <div class="popup__content">
-                <img class="popup__close" src="images/back.png">
-                <h3 class="popup__title">Регистрация</h3>
-                <form class="popup__form popup__createuser" name="createuser">
-                    <p class="popup__text">Email</p>
-                    <input class="popup__input" type="email" name="email" placeholder="Введите почту">
-                    <span></span>
-                    <p class="popup__text">Пароль</p>
-                    <input class="popup__input" type="password" name="password" placeholder="Введите пароль">
-                    <span></span>
-                    <p class="popup__text">Имя</p>
-                    <input class="popup__input" type="text" name="username" placeholder="Введите своё имя">
-                    <span></span>
-                    <button class="button popup__button">Зарегистрироваться</button>
-                </form>
-                <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#login" id="link-login">Войти</a></p>
-            </div>
-        </div>
-        <div class="popup popup__successsignup">
-            <div class="popup__content">
-                <img class="popup__close" src="images/back.png">
-                <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-                <a class="popup__redirect-login" name="login">Выполнить вход</a>
-            </div>
-        </div>
-        <footer class="footer wrap">
-            <p class="footer__about">&copy; 2020 Supersite, Powered by News API</p>
-            <nav class="footer__navigation">
-                <nav class=footer__nav-list>
-                    <a class="footer__link" href="index.html">Главная</a>
-                    <a class="footer__link" href="http://yandex.praktikum.ru">Яндекс.Практикум</a>
-                </nav>
-                <div class="footer__social-media">
-                    <a class="footer__social-media-icon" href="https://github.com/sashura/world-news-frontend" target="_blank"><img class="footer__icon-image" src="images/github.svg" alt="github"></a>
-                    <a class="footer__social-media-icon" href="http://facebook.com" target="_blank"><img class="footer__icon-image" src="images/facebook.svg" alt="facebook"></a>
-                </div>
-            </nav>
-        </footer>
     </div>
+    <section class="news-list wrap_root">
+        <div class="news-list__content_found news-list_is-opened">
+            <h2 class="news-list__title">Результаты поиска</h2>
+            <div class="news-list__cardlist">
+                <div class="news-list__card">
+                    <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                    <div class="news-list__card_help-message news-list__card_help-message_saved">
+                        <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                    </div>
+                    <div class="news-list__card_image-container">
+                        <img class="news-list__card_image" src="images/IMG_20190824_164316.jpg">
+                    </div>
+                    <p class="news-list__card_date">2 августа, 2019</p>
+                    <div class="news-list__card_text-container">
+                        <h3 class="news-list__card_title">Национальное достояние – парки</h3>
+                        <p class="news-list__card_text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                            начала складываться система национальных парков – охраняемых территорий, где и сегодня
+                            каждый может приобщиться к природе.</p>
+                        <a class="news-list__card_link" href="http://www.lenta.ru" target="_blank">лента.ру</a>
+                    </div>
+                </div>
+                <div class="news-list__card">
+                    <div class="news-list__card_image-container">
+                        <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                        <div class="news-list__card_help-message news-list__card_help-message_saved">
+                            <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                        </div>
+                        <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
+                    </div>
+                    <p class="news-list__card_date">2 августа, 2019</p>
+                    <div class="news-list__card_text-container">
+                        <h3 class="news-list__card_title">Лесные огоньки: история одной фотографии</h3>
+                        <p class="news-list__card_text">Фотограф отвлеклась от освещения суровой политической реальности
+                            Мексики, чтобы запечатлеть ускользающую красоту одного
+                            из местных чудес природы.</p>
+                        <a class="news-list__card_link" href="http://www.meduza.io" target="_blank">медуза</a>
+                    </div>
+                </div>
+                <div class="news-list__card">
+                    <div class="news-list__card_image-container">
+                        <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                        <div class="news-list__card_help-message news-list__card_help-message_saved">
+                            <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                        </div>
+                        <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
+                    </div>
+                    <p class="news-list__card_date">2 августа, 2019</p>
+                    <div class="news-list__card_text-container">
+                        <h3 class="news-list__card_title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+                        <p class="news-list__card_text">Знаменитый фотограф снимает первозданные леса России, чтобы
+                            рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+                            тайгу, где...</p>
+                        <a class="news-list__card_link" href="http://www.ria.ru" target="_blank">риа</a>
+                    </div>
+                </div>
+                <div class="news-list__card hidden">
+                    <div class="news-list__card_image-container">
+                        <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                        <div class="news-list__card_help-message news-list__card_help-message_saved">
+                            <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                        </div>
+                        <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
+                    </div>
+                    <p class="news-list__card_date">2 августа, 2019</p>
+                    <div class="news-list__card_text-container">
+                        <h3 class="news-list__card_title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+                        <p class="news-list__card_text">Знаменитый фотограф снимает первозданные леса России, чтобы
+                            рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+                            тайгу, где...</p>
+                        <a class="news-list__card_link" href="http://www.ria.ru" target="_blank">риа</a>
+                    </div>
+                </div>
+                <div class="news-list__card hidden">
+                    <div class="news-list__card_image-container">
+                        <div class="news-list__card_icon news-list__card_icon_mark-icon"></div>
+                        <div class="news-list__card_help-message news-list__card_help-message_saved">
+                            <p class="news-list__card_help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+                        </div>
+                        <img class="news-list__card_image" src="images/IMG_20190824_172907.jpg">
+                    </div>
+                    <p class="news-list__card_date">2 августа, 2019</p>
+                    <div class="news-list__card_text-container">
+                        <h3 class="news-list__card_title">Лесные огоньки: история одной фотографии</h3>
+                        <p class="news-list__card_text">Фотограф отвлеклась от освещения суровой политической реальности
+                            Мексики, чтобы запечатлеть ускользающую красоту одного
+                            из местных чудес природы.</p>
+                        <a class="news-list__card_link" href="http://www.meduza.io" target="_blank">медуза</a>
+                    </div>
+                </div>
+            </div>
+            <button class="button button_cardlist">Показать еще</button>
+        </div>
+        <div class="news-list__content_notfound">
+            <img src="images/not-found_v1.svg" alt="not-found">
+            <h3 class="news-list__content_notfound-title">Ничего не найдено</h3>
+            <p class="news-list__content_notfound-message">К сожалению, по вашему запросу ничего не найдено</p>
+        </div>
+        <div class="news-list__content_searchinprogress">
+            <div class="circle-preloader"></div>
+            <p class="news-list__content_notfound-message">Идет поиск новостей...</p>
+        </div>
+    </section>
+
+    <section class="about-author wrap_root">
+        <img class="about-author__image" src="./images/IMG_20190824_172907.jpg" alt="фотография автора">
+        <div class="about-author__info">
+            <h2 class="about-author__title">Об авторе</h2>
+            <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем
+                вы занимаетесь, какими технологиями разработки владеете.
+                 Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+                потенциальным заказчикам.</p>
+        </div>
+    </section>
+    <div class="popup popup__login">
+        <div class="popup__content">
+            <img class="popup__close" src="images/back.png">
+            <h3 class="popup__title">Вход</h3>
+            <form class="popup__form popup__login" name="login">
+                <p class="popup__text">Email</p>
+                <input class="popup__input" type="email" name="email" placeholder="Введите почту">
+                <span></span>
+                <p class="popup__text">Пароль</p>
+                <input class="popup__input" type="password" name="password" placeholder="Введите пароль">
+                <span></span>
+                <button class="button popup__button">Войти</button>
+            </form>
+            <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#createuser"
+                    id="link-createuser">Зарегистрироваться</a> </p>
+        </div>
+    </div>
+    <div class="popup popup__createuser">
+        <div class="popup__content">
+            <img class="popup__close" src="images/back.png">
+            <h3 class="popup__title">Регистрация</h3>
+            <form class="popup__form popup__createuser" name="createuser">
+                <p class="popup__text">Email</p>
+                <input class="popup__input" type="email" name="email" placeholder="Введите почту">
+                <span></span>
+                <p class="popup__text">Пароль</p>
+                <input class="popup__input" type="password" name="password" placeholder="Введите пароль">
+                <span></span>
+                <p class="popup__text">Имя</p>
+                <input class="popup__input" type="text" name="username" placeholder="Введите своё имя">
+                <span></span>
+                <button class="button popup__button">Зарегистрироваться</button>
+            </form>
+            <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#login"
+                    id="link-login">Войти</a></p>
+        </div>
+    </div>
+    <div class="popup popup__successsignup">
+        <div class="popup__content">
+            <img class="popup__close" src="images/back.png">
+            <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+            <a class="popup__redirect-login" name="login">Выполнить вход</a>
+        </div>
+    </div>
+    <footer class="footer wrap_footer">
+        <p class="footer__about">&copy; 2020 Supersite, Powered by News API</p>
+        <nav class="footer__navigation">
+            <nav class=footer__nav-list>
+                <a class="footer__link" href="index.html">Главная</a>
+                <a class="footer__link" href="http://yandex.praktikum.ru">Яндекс.Практикум</a>
+            </nav>
+            <div class="footer__social-media">
+                <a class="footer__social-media-icon" href="https://github.com/sashura/world-news-frontend"
+                    target="_blank"><img class="footer__icon-image" src="images/github.svg" alt="github"></a>
+                <a class="footer__social-media-icon" href="http://facebook.com" target="_blank"><img
+                        class="footer__icon-image" src="images/facebook.svg" alt="facebook"></a>
+            </div>
+        </nav>
+    </footer>
     <script src="index.js"></script>
 </body>
+
 </html>

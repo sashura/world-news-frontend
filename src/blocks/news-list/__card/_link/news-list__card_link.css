@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 780px) {
     .news-list__card_link {
-        bottom: 12px;
-        left: 12px;
+        bottom: 16px;
+        left: 16px;
     }
 }
