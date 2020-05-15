@@ -63,7 +63,7 @@
     line-height: 22px;
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width:522px) {
     .search__input {
         max-width: 100%;
         height: 56px;

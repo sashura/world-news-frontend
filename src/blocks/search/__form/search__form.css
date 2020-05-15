@@ -6,7 +6,7 @@
     position: relative;
 }
 
-@media screen and (min-width:520px) {
+@media screen and (min-width:521px) {
     .search__form {
         align-items: center;
     }

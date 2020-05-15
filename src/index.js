@@ -1,3 +1,5 @@
+import './styles/index.css';
+
 const popupClose = document.querySelector('.popup__close');
 const popupLogin = document.querySelector('.popup__login');
 const buttonLogin = document.querySelector('.header__button');
@@ -15,7 +17,7 @@ const markIcon = document.querySelectorAll('.news-list__card_icon_mark-icon');
 const menuButtonHeader = document.querySelector('.header__menu-icon');
 const menuHeader = document.querySelector('.header__nav-block');
 const header = document.querySelector('.header');
-const menuHeaderClose = document.querySelector('.header__menu-icon_close');
+const errorInput = document.getElementById('error');
 
 menuButtonHeader.addEventListener('click', () => {
   if (menuButtonHeader.classList.value === 'header__menu-icon header__menu-icon_white header__menu-icon_close') {
@@ -73,6 +75,9 @@ buttonCardList.addEventListener('click', () => {
 
 popupInput.addEventListener('input', () => {
   popupButton.classList.add('popup__button_active');
+  errorInput.classList.add('error_open');
+  // eslint-disable-next-line
+  event.target.classList.add('error_open');
 });
 
 cardIcon.addEventListener('mouseover', () => {
@@ -85,7 +90,8 @@ cardIcon.addEventListener('mouseout', () => {
 
 markIcon.forEach((item) => {
   item.addEventListener('click', () => {
-    event.target.style.backgroundImage = 'url(./images/mark_active.svg)';
+    // eslint-disable-next-line
+    event.target.style.backgroundImage = 'url(./images/bookmark.png)';
   });
 });
 
