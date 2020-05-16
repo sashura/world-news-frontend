@@ -1,0 +1,17 @@
+.search__content {
+    display: flex;
+    flex-direction: column;
+    width: 42vw;
+}
+
+@media screen and (max-width: 800px) and (min-width: 520px) {
+    .search__content {
+        width: 58vw;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .search__content {
+        width: calc(100vw - 32px);
+    }
+}

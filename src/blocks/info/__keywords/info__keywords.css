@@ -1,0 +1,21 @@
+.info__keywords {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 541px) and (max-width: 790px) {
+    .info__keywords {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .info__keywords {
+        margin-top: 16px; 
+    }
+}

@@ -1,0 +1,21 @@
+.footer__nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #1A1B22;
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .footer__nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 48px;
+    }
+}

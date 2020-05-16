@@ -1,0 +1,9 @@
+@import url(./_white/header__navigation_white.css);
+@import url(./_black/header__navigation_black.css);
+
+.header__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Александра Захарова">
+  <meta name="description" content="Поиск новостей">
+  <meta name="keywords" content="новости, поиск, мир">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="icon" href="<%=require('./images/favicongr.svg').default%>">
+  <title>World-news</title>
+</head>
+
+<body>
+  <div class="wrap_picture">
+    <header class="header wrap_header header_main-page">
+      <div class="header__title-block">
+        <h1 class="header__title header__title_main">NewsExplorer</h1>
+        <div class="header__menu-icon header__menu-icon_white"></div>
+      </div>
+      <div class="header__nav-block header__nav-block_black wrap_background_nav-block">
+        <nav class="header__navigation header__navigaton_black">
+          <div class="header__nav-list">
+            <div class="header__link-container">
+              <a class="header__link header__link_main" href="./index.html">Главная</a>
+              <div class="header__underline">_________</div>
+            </div>
+            <div class="header__link-container">
+              <a class="header__link header__link_main" href="./savednews.html">Сохраненные статьи</a>
+            </div>
+            <div class="header__button header__button_main">Авторизоваться</div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="search wrap_root">
+      <div class="search__content">
+        <h2 class="search__title">Что в мире творится?</h2>
+        <p class="search__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
+        </p>
+        <form class="search__form">
+          <input type="text" class="search__input" placeholder="Введите тему новости">
+          <button class="button button_search">Искать</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <section class="news-list wrap_root">
+    <div class="news-list__content_found news-list_is-opened">
+      <h2 class="news-list__title">Результаты поиска</h2>
+
+      <div class="news-list__cardlist">
+        <div class="news-list__card">
+          <div class="news-list__icon news-list__icon_mark-icon"></div>
+          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
+            <div class="news-list__help-message news-list__help-message_saved">
+              <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+            </div>
+            <div class="news-list__image-container">
+              <img class="news-list__image" src="<%=require('./images/image.png').default%>" alt="ключевое слово">
+            </div>
+            <p class="news-list__date">2 августа, 2019</p>
+            <div class="news-list__text-container">
+              <h3 class="news-list__cardtitle">Национальное достояние – парки</h3>
+              <p class="news-list__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
+                здесь
+                начала складываться система национальных парков – охраняемых территорий, где и сегодня
+                каждый может приобщиться к природе.</p>
+              <div class="news-list__link">лента.ру</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="news-list__card">
+          <div class="news-list__icon news-list__icon_mark-icon"></div>
+          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
+            <div class="news-list__image-container">
+              <div class="news-list__help-message news-list__help-message_saved">
+                <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+              </div>
+              <img class="news-list__image" src="<%=require('./images/image.png').default%>" alt="ключевое слово">
+            </div>
+            <p class="news-list__date">2 августа, 2019</p>
+            <div class="news-list__text-container">
+              <h3 class="news-list__cardtitle">Лесные огоньки: история одной фотографии</h3>
+              <p class="news-list__text">Фотограф отвлеклась от освещения суровой политической
+                реальности
+                Мексики, чтобы запечатлеть ускользающую красоту одного
+                из местных чудес природы.</p>
+              <div class="news-list__link">медуза</div>
+            </div>
+          </a>
+        </div>
+        <div class="news-list__card">
+          <div class="news-list__icon news-list__icon_mark-icon"></div>
+          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
+            <div class="news-list__image-container">
+              <div class="news-list__help-message news-list__help-message_saved">
+                <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+              </div>
+              <img class="news-list__image" src="<%=require('./images/image.png').default%>" alt="ключевое слово">
+            </div>
+            <p class="news-list__date">2 августа, 2019</p>
+            <div class="news-list__text-container">
+              <h3 class="news-list__cardtitle">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+              <p class="news-list__text">Знаменитый фотограф снимает первозданные леса России, чтобы
+                рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+                тайгу, где...</p>
+              <div class="news-list__link">риа</div>
+            </div>
+          </a>
+        </div>
+        <div class="news-list__card hidden">
+          <div class="news-list__icon news-list__icon_mark-icon"></div>
+          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
+            <div class="news-list__image-container">
+              <div class="news-list__help-message news-list__help-message_saved">
+                <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+              </div>
+              <img class="news-list__image" src="<%=require('./images/image.png').default%>" alt="ключевое слово">
+            </div>
+            <p class="news-list__date">2 августа, 2019</p>
+            <div class="news-list__text-container">
+              <h3 class="news-list__cardtitle">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+              <p class="news-list__text">Знаменитый фотограф снимает первозданные леса России, чтобы
+                рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+                тайгу, где...</p>
+              <div class="news-list__link">риа</div>
+            </div>
+          </a>
+        </div>
+        <div class="news-list__card hidden">
+
+          <div class="news-list__icon news-list__icon_mark-icon"></div>
+          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
+            <div class="news-list__image-container">
+              <div class="news-list__help-message news-list__help-message_saved">
+                <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
+              </div>
+              <img class="news-list__image" src="<%=require('./images/image.png').default%>" alt="ключевое слово">
+            </div>
+            <p class="news-list__date">2 августа, 2019</p>
+            <div class="news-list__text-container">
+              <h3 class="news-list__cardtitle">Лесные огоньки: история одной фотографии</h3>
+              <p class="news-list__text">Фотограф отвлеклась от освещения суровой политической
+                реальности
+                Мексики, чтобы запечатлеть ускользающую красоту одного
+                из местных чудес природы.</p>
+              <div class="news-list__link">медуза</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button class="button button_cardlist">Показать еще</button>
+    </div>
+    <div class="news-list__content_notfound">
+      <img src="<%=require('./images/not-found_v1.svg').default%>" alt="not-found">
+      <h3 class="news-list__content_notfound-title">Ничего не найдено</h3>
+      <p class="news-list__content_notfound-message">К сожалению, по вашему запросу ничего не найдено</p>
+    </div>
+    <div class="news-list__content_searchinprogress">
+      <div class="circle-preloader"></div>
+      <p class="news-list__content_notfound-message">Идет поиск новостей...</p>
+    </div>
+  </section>
+
+  <section class="about-author wrap_root">
+    <img class="about-author__image" src="<%=require('./images/178-min.jpg').default%>" alt="фотография автора">
+    <div class="about-author__info">
+      <h2 class="about-author__title">Об авторе</h2>
+      <p class="about-author__text">Меня зовут Александра. Данный сайт - разработка по макету и требованиям
+        Яндекс.Практикума
+        и моя дипломная работа по окончанию курса Веб-разработки.<br>
+        Еще восемь месяцев назад я не знала о кодинге ничего. И вот - результат обучения, которым я горжусь.
+        Пусть мои
+        знания и способности на данный момент на начальной стадии комплектации, но магия - создавать прекрасное
+        из ничего,
+        заставляет читать непонятное, ошибаться и пробовать снова и снова.
+      </p>
+    </div>
+  </section>
+  <div class="popup popup__login">
+    <div class="popup__content">
+      <img class="popup__close" src="<%=require('./images/back.svg').default%>" alt="close">
+      <h3 class="popup__title">Вход</h3>
+      <form class="popup__form popup__login" name="login">
+        <p class="popup__text">Email</p>
+        <input class="popup__input" type="email" name="email" placeholder="Введите почту" required>
+        <span class="error" id="error">Вы начали вводить текст</span>
+        <p class="popup__text">Пароль</p>
+        <input class="popup__input" type="password" name="password" placeholder="Введите пароль" required>
+        <span></span>
+        <button class="button popup__button">Войти</button>
+      </form>
+      <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#createuser"
+          id="link-createuser">Зарегистрироваться</a> </p>
+    </div>
+  </div>
+  <div class="popup popup__createuser">
+    <div class="popup__content">
+      <img class="popup__close" src="<%=require('./images/back.png').default%>" alt="close">
+      <h3 class="popup__title">Регистрация</h3>
+      <form class="popup__form popup__createuser" name="createuser">
+        <p class="popup__text">Email</p>
+        <input class="popup__input" type="email" name="email" placeholder="Введите почту" required>
+        <span></span>
+        <p class="popup__text">Пароль</p>
+        <input class="popup__input" type="password" name="password" placeholder="Введите пароль" required>
+        <span></span>
+        <p class="popup__text">Имя</p>
+        <input class="popup__input" type="text" name="username" placeholder="Введите своё имя" required>
+        <span></span>
+        <span class="error error_open error_api">Такой пользователь уже зарегистрирован</span>
+        <button class="button popup__button">Зарегистрироваться</button>
+      </form>
+      <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#login" id="link-login">Войти</a></p>
+    </div>
+  </div>
+  <div class="popup popup__successsignup">
+    <div class="popup__content">
+      <img class="popup__close" src="<%=require('./images/back.svg').default%>" alt="close">
+      <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+      <a class="popup__redirect-login">Выполнить вход</a>
+    </div>
+  </div>
+  <footer class="footer wrap_footer">
+    <p class="footer__about">&copy; 2020 Supersite, Powered by News API</p>
+    <nav class="footer__navigation">
+      <nav class=footer__nav-list>
+        <a class="footer__link" href="index.html">Главная</a>
+        <a class="footer__link" href="http://yandex.praktikum.ru">Яндекс.Практикум</a>
+      </nav>
+      <div class="footer__social-media">
+        <a class="footer__social-media-icon" href="https://github.com/sashura/world-news-frontend" target="_blank"><img
+            class="footer__icon-image" src="<%=require('./images/github.svg').default%>" alt="github"></a>
+        <a class="footer__social-media-icon" href="http://facebook.com" target="_blank"><img class="footer__icon-image"
+            src="<%=require('./images/facebook.svg').default%>" alt="facebook"></a>
+      </div>
+    </nav>
+  </footer>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>

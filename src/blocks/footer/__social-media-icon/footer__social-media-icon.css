@@ -1,0 +1,7 @@
+.footer__social-media-icon {
+    margin-right: 28px;
+}
+
+.footer__social-media-icon:last-of-type {
+    margin-right: 0;
+}

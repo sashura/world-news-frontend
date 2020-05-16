@@ -1,0 +1,38 @@
+@import url(./_main/header__button_main.css);
+@import url(./_savenews/header__button_savenews.css);
+@import url(./_user-name/button_user-name.css);
+@import url(./_icon/header__button_icon.css);
+
+.header__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    height: 48px;
+    background: transparent;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 540px) {
+    .header__button {
+        width: 288px;
+        align-self: center;
+        margin-top: 22px;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 790px) {
+    .header__button {
+        font-size: 16px;
+    }
+}

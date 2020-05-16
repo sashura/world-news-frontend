@@ -1,0 +1,11 @@
+.news-list__content_notfound-message {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    text-align: center;
+    max-width: 290px;
+    margin-top: 16px;
+}

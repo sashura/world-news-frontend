@@ -1,0 +1,6 @@
+@import url(./_found/news-list__content_found.css);
+@import url(./_notfound/news-list__content_notfound.css);
+@import url(./_searchinprogress/news-list__content_searchinprogress.css);
+@import url(./_notfound-message/news-list__content_notfound-message.css);
+@import url(./_notfound-title/news-list__content_notfound-title.css);
+@import url(./_is-opened/news-list_is-opened.css);

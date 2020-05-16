@@ -1,0 +1,23 @@
+.news-list__title {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+    margin-bottom: 64px;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .news-list__title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .news-list__title {
+        margin-bottom: 24px;
+    }
+}

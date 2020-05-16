@@ -1,0 +1,22 @@
+.header__underline_savenews {
+    font-weight: 700;
+    color: #1A1B22;
+}
+
+@media screen and (max-width: 920px) and (min-width: 620px) {
+    .header__underline_savenews {
+        top: 58px;
+    }
+}
+
+@media screen and (max-width: 620px) and (min-width: 541px) {
+    .header__underline_savenews {
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header__underline_savenews {
+        display: none;
+    }
+}

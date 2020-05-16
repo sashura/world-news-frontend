@@ -1,0 +1,13 @@
+@import url(./_main/header__link_main.css);
+@import url(./_savenews/header__link_savenews.css);
+
+.header__link {
+    text-decoration: none;
+    margin-right: 34px;
+}
+
+@media screen and (min-width: 479px) and (max-width: 693px) {
+    .header__link {
+        margin-right: 16px;
+    }
+}
