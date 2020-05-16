@@ -3,6 +3,16 @@
 @import url(./__cardlist/news-list__cardlist.css);
 @import url(./__title/news-list__title.css);
 @import url(./__linkout/news-list__linkout.css);
+@import url(./__icon/news-list__icon.css);
+@import url(./__date/news-list__date.css);
+@import url(./__link/news-list__card_link.css);
+@import url(./__text-container/news-list__text-container.css);
+@import url(./__text/news-list__text.css);
+@import url(./__image/news-list__image.css);
+@import url(./__image-container/news-list__card_image-container.css);
+@import url(./__keyword/news-list__keyword.css);
+@import url(./__cardtitle/news-list__cardtitle.css);
+@import url(./__help-message/news-list__help-message.css);
 
 .news-list {
     background-color: #F5F6F7;

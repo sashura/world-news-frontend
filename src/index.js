@@ -11,9 +11,9 @@ const linkLogin = document.getElementById('link-login');
 const buttonCardList = document.querySelector('.button_cardlist');
 const hiddenCards = document.querySelectorAll('.hidden');
 const popupInput = document.querySelector('.popup__input');
-const helpMessage = document.querySelector('.news-list__card_help-message');
-const cardIcon = document.querySelector('.news-list__card_icon');
-const markIcon = document.querySelectorAll('.news-list__card_icon_mark-icon');
+const helpMessage = document.querySelector('.news-list__help-message');
+const cardIcon = document.querySelector('.news-list__icon');
+const markIcon = document.querySelectorAll('.news-list__icon_mark-icon');
 const menuButtonHeader = document.querySelector('.header__menu-icon');
 const menuHeader = document.querySelector('.header__nav-block');
 const header = document.querySelector('.header');
@@ -81,11 +81,11 @@ popupInput.addEventListener('input', () => {
 });
 
 cardIcon.addEventListener('mouseover', () => {
-  helpMessage.classList.add('news-list__card_help-message_is-opened');
+  helpMessage.classList.add('news-list__help-message_is-opened');
 });
 
 cardIcon.addEventListener('mouseout', () => {
-  helpMessage.classList.remove('news-list__card_help-message_is-opened');
+  helpMessage.classList.remove('news-list__help-message_is-opened');
 });
 
 markIcon.forEach((item) => {

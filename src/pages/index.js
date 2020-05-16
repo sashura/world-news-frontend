@@ -1,7 +1,7 @@
 import './savednews.css';
 
-const helpMessage = document.querySelector('.news-list__card_help-message');
-const cardIcon = document.querySelector('.news-list__card_icon');
+const helpMessage = document.querySelector('.news-list__help-message');
+const cardIcon = document.querySelector('.news-list__icon');
 const menuButtonHeader = document.querySelector('.header__menu-icon');
 const menuHeader = document.querySelector('.header__nav-block');
 const header = document.querySelector('.header');
@@ -30,9 +30,9 @@ menuButtonHeader.addEventListener('click', () => {
 });
 
 cardIcon.addEventListener('mouseover', () => {
-  helpMessage.classList.add('news-list__card_help-message_is-opened');
+  helpMessage.classList.add('news-list__help-message_is-opened');
 });
 
 cardIcon.addEventListener('mouseout', () => {
-  helpMessage.classList.remove('news-list__card_help-message_is-opened');
+  helpMessage.classList.remove('news-list__help-message_is-opened');
 });

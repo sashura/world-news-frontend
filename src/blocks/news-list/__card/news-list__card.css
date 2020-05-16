@@ -1,15 +1,3 @@
-@import url(./_image/news-list__card_image.css);
-@import url(./_image-container/news-list__card_image-container.css);
-@import url(./_date/news-list__card_date.css);
-@import url(./_title/news-list__card_title.css);
-@import url(./_text/news-list__card_text.css);
-@import url(./_link/news-list__card_link.css);
-@import url(./_text-container/news-list__card_text-container.css);
-@import url(./_icon/news-list__card_icon.css);
-@import url(./_help-message/news-list__card_help-message.css);
-@import url(./_keywordbox/news-list__card_keywordbox.css);
-@import url(./_keyword/news-list__card_keyword.css);
-
 .news-list__card {
     display: flex;
     flex-direction: column;

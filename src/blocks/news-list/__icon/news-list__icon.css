@@ -1,0 +1,23 @@
+@import url(./_trash-icon/news-list__icon_trach-icon.css);
+@import url(./mark-icon/news-list__icon_mark-icon.css);
+
+.news-list__icon {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .news-list__icon {
+        top: 8px;
+        right: 8px;
+    }
+}

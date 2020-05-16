@@ -1,0 +1,4 @@
+.news-list__help-message.news-list__help-message_is-opened {
+    display: flex;
+    justify-content: center;
+}
