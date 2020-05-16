@@ -187,10 +187,10 @@
       <h3 class="popup__title">Вход</h3>
       <form class="popup__form popup__login" name="login">
         <p class="popup__text">Email</p>
-        <input class="popup__input" type="email" name="email" placeholder="Введите почту">
+        <input class="popup__input" type="email" name="email" placeholder="Введите почту" required>
         <span class="error" id="error">Вы начали вводить текст</span>
         <p class="popup__text">Пароль</p>
-        <input class="popup__input" type="password" name="password" placeholder="Введите пароль">
+        <input class="popup__input" type="password" name="password" placeholder="Введите пароль" required>
         <span></span>
         <button class="button popup__button">Войти</button>
       </form>
@@ -204,13 +204,13 @@
       <h3 class="popup__title">Регистрация</h3>
       <form class="popup__form popup__createuser" name="createuser">
         <p class="popup__text">Email</p>
-        <input class="popup__input" type="email" name="email" placeholder="Введите почту">
+        <input class="popup__input" type="email" name="email" placeholder="Введите почту" required>
         <span></span>
         <p class="popup__text">Пароль</p>
-        <input class="popup__input" type="password" name="password" placeholder="Введите пароль">
+        <input class="popup__input" type="password" name="password" placeholder="Введите пароль" required>
         <span></span>
         <p class="popup__text">Имя</p>
-        <input class="popup__input" type="text" name="username" placeholder="Введите своё имя">
+        <input class="popup__input" type="text" name="username" placeholder="Введите своё имя" required>
         <span></span>
         <span class="error error_open error_api">Такой пользователь уже зарегистрирован</span>
         <button class="button popup__button">Зарегистрироваться</button>
