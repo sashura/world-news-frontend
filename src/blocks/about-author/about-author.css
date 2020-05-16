@@ -6,7 +6,7 @@
 .about-author {
     display: flex;
     flex-direction: row;
-    width: calc(100vw - 208px);
+    width: calc(100% - 208px);
     align-items: center;
 }
 

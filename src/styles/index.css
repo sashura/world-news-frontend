@@ -14,10 +14,11 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
     margin: auto;
+    max-width: 1440px;
 }
 
 a {
     text-decoration: none;
 }
+

@@ -3,4 +3,5 @@
     background-size: cover;
     position: relative;
     background-position: center;
+    max-width: 100vw;
 }
