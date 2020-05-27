@@ -1,0 +1,61 @@
+export default class NewsList {
+  constructor(card, api, container, NEWS_LISTS) {
+    this.card = card;
+    this.api = api;
+    this.container = container;
+    this.NEWS_LISTS = NEWS_LISTS;
+  }
+
+  // получение готового массива DOM-элементов новостных карточек
+  render(keyword) {
+    event.preventDefault();
+    this.NEWS_LISTS.inprogress.classList.add('news-list_is-opened');
+    this.api.getNews(keyword)
+      .then((data) => {
+        if (data.totalResults === 0) {
+          this.newsNotFoundCreate();
+        }
+        const arrNews = [];
+        data.articles.forEach((item) => {
+          arrNews.push(
+            this.card.create(
+              keyword,
+              item.urlToImage,
+              item.title,
+              item.description,
+              item.publishedAt,
+              item.source.name,
+              item.url,
+            ),
+          );
+        });
+        return arrNews;
+      })
+      .then((arrNews) => this.newsListCreate(arrNews));
+  }
+
+  // отрисовка карточек на странице
+  newsListCreate(arrNews) {
+    arrNews.splice(this.container.childNodes.length, 3).forEach((news) => {
+      this.NEWS_LISTS.inprogress.classList.remove('news-list_is-opened');
+      this.container.insertAdjacentElement('beforeend', news);
+      this.NEWS_LISTS.found.classList.add('news-list_is-opened');
+    });
+    document.querySelector('.button_cardlist').addEventListener('click', () => {
+      arrNews.splice(this.container.childNodes.length, 3).forEach((news) => {
+        this.container.insertAdjacentElement('beforeend', news);
+      });
+    });
+  }
+
+  // блок информации - карточки не найдены
+  newsNotFoundCreate() {
+    this.NEWS_LISTS.inprogress.classList.remove('news-list_is-opened');
+    this.NEWS_LISTS.notfound.classList.add('news-list_is-opened');
+  }
+
+  // проверка количества карточек на странице
+  checkCards() {
+    return this.container.childNodes.length;
+  }
+}
