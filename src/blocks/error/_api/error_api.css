@@ -1,7 +1,5 @@
 .error_api {
-  position: absolute;
-  bottom: 112px;
-  left: 91px;
   align-self: center;
   width: 100%;
+  text-align: center;
 }

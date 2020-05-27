@@ -9,6 +9,7 @@
 @import url(./__inner/popup__inner.css);
 @import url(./__text-bottom/popup__rext-bottom.css);
 @import url(./__redirect-login/popup__redirect-login.css);
+@import url(./__button-container/popup__button-container.css);
 
 .popup {
   position: fixed;

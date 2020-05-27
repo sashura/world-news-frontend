@@ -4,7 +4,6 @@
 .popup__button {
   width: 360px;
   height: 64px;
-  margin-top: 39px;
   margin-bottom: 16px;
   background-color: #E6E8EB;
   font-family: 'Roboto';
@@ -17,7 +16,7 @@
 }
 
 @media screen and (max-width: 490px) {
-  .popup__button { 
+  .popup__button {
     width: 100%;
   }
 }
