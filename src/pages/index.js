@@ -1,5 +1,13 @@
 import './savednews.css';
 
+import Card from '../js/components/Card';
+import NewsList from '../js/components/NewsList';
+import Api from '../js/api/ApiNews';
+
+const authorization = require('../js/constants/authorization');
+
+const api = new Api(authorization);
+
 const helpMessage = document.querySelector('.news-list__help-message');
 const cardIcon = document.querySelector('.news-list__icon');
 const menuButtonHeader = document.querySelector('.header__menu-icon');
