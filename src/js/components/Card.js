@@ -1,12 +1,15 @@
 export default class Card {
-  constructor(api, apiBackend, auth) {
+  constructor(api, apiBackend, auth, dateToFormat) {
     this.api = api;
     this.apiBackend = apiBackend;
     this.auth = auth;
+    this.dateToFormat = dateToFormat;
   }
 
   // создание элемента новостной карточки
   create(keyword, image, title, text, date, source, link) {
+    const dateFormat = this.dateToFormat(date);
+
     const articleCard = document.createElement('div');
     articleCard.classList.add('news-list__card');
     articleCard.insertAdjacentHTML('afterbegin', `<div class="news-list__icon news-list__icon_mark-icon"></div>
@@ -17,7 +20,7 @@ export default class Card {
       <div class="news-list__image-container">
         <img class="news-list__image" src="${image}" alt="${keyword}">
       </div>
-      <p class="news-list__date">${date}</p>
+      <p class="news-list__date">${dateFormat}</p>
       <div class="news-list__text-container">
         <h3 class="news-list__cardtitle">${title}</h3>
         <p class="news-list__text">${text}</p>
