@@ -18,9 +18,11 @@ const auth = new Auth();
 const apiBackend = new ApiBackend(backendData);
 const header = new Header(HEADER_BLOCK, apiBackend);
 const card = new Card(apiBackend, auth, dateToFormat, helpMessages);
-const savedNewsList = new SavedNewsList(apiBackend, card, CONTAINER, NEWS_LISTS, HEADER_BUTTON);
+const savedNewsList = new SavedNewsList(
+  apiBackend, card, CONTAINER, NEWS_LISTS, HEADER_BUTTON, auth,
+);
 
 header.savedNewsHeader();
 
-savedNewsList.newsRender();
+savedNewsList.checkLogin();
 savedNewsList.unloginRedirect();

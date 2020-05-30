@@ -41,7 +41,7 @@ export default class PopupSignIn extends Popup {
   }
 
   // установка обработчика в незалогиненном состоянии - открытие попапа
-  _setButtonHangler() {
+  setButtonHangler() {
     this.buttonHeader.addEventListener('click', this.open);
   }
 
@@ -63,7 +63,7 @@ export default class PopupSignIn extends Popup {
   // приведение хедера и кнопки открытия попапа в незалогиненное состояние
   setUnloginState() {
     this.header.setUnloginState();
-    this._setButtonHangler();
+    this.setButtonHangler();
     this._removeUnloginHangler();
   }
 }

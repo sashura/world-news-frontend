@@ -1,18 +1,29 @@
 export default class SavedNewsList {
-  constructor(apiBackend, card, CONTAINER, NEWS_LISTS, HEADER_BUTTON) {
+  constructor(apiBackend, card, CONTAINER, NEWS_LISTS, HEADER_BUTTON, auth) {
     this.apiBackend = apiBackend;
     this.card = card;
     this.CONTAINER = CONTAINER;
     this.NEWS_LISTS = NEWS_LISTS;
     this.HEADER_BUTTON = HEADER_BUTTON;
+    this.auth = auth;
+    this.keywordsList = document.querySelector('.info__keywords-list');
+    this.keywordsText = document.querySelector('.info__keywords-text');
+  }
+
+  checkLogin() {
+    if (this.auth.checkLogin()) {
+      this.newsRender();
+    } else {
+      window.location.replace('index.html');
+    }
   }
 
   newsRender() {
     document.querySelector('.header__link_redirect-link').style.display = 'block';
     this.apiBackend.getSavedArticles()
       .then((res) => {
-        this.setInfoBlock(res.length);
-        this.setKeywords(res);
+        this._setInfoBlock(res.length);
+        this._setKeywords(res);
         const articlesArr = [];
         res.forEach((item) => {
           articlesArr.push(
@@ -30,21 +41,23 @@ export default class SavedNewsList {
         return articlesArr;
       })
       .then((articlesArr) => {
-        this.pageState(articlesArr);
+        this._pageState(articlesArr);
       })
       .catch(() => {
         document.querySelector('.info__savednews').textContent = ', у вас нет сохраненных статей';
+        this.keywordsListtextContent = '';
+        this.keywordsTexttextContent = '';
       });
   }
 
-  pageState(articlesArr) {
+  _pageState(articlesArr) {
     articlesArr.forEach((news) => {
       this.NEWS_LISTS.found.classList.add('news-list_is-opened');
       this.CONTAINER.insertAdjacentElement('beforeend', news);
     });
   }
 
-  setInfoBlock(length) {
+  _setInfoBlock(length) {
     const infoTitle = document.querySelector('.info__savednews');
     if (length === 0) {
       infoTitle.textContent = ', у вас нет сохраненных статей';
@@ -64,9 +77,7 @@ export default class SavedNewsList {
     }
   }
 
-  setKeywords(articlesArray) {
-    const keywordsList = document.querySelector('.info__keywords-list');
-    const keywordsText = document.querySelector('.info__keywords-text');
+  _setKeywords(articlesArray) {
     const keywordArray = [];
     articlesArray.forEach((article) => {
       keywordArray.push(article.keyword);
@@ -87,24 +98,24 @@ export default class SavedNewsList {
     const anotherKeywords = arrayCountKeys.length - 2;
 
     if (lengthKeywords === 0) {
-      keywordsList.textContent = '';
-      keywordsText.textContent = '';
+      this.keywordsListtextContent = '';
+      this.keywordsTexttextContent = '';
     }
     if (lengthKeywords === 1) {
-      keywordsList.textContent = `${arrayCountKeys[0]}`;
-      keywordsText.textContent = 'По ключевому слову ';
+      this.keywordsListtextContent = `${arrayCountKeys[0]}`;
+      this.keywordsTexttextContent = 'По ключевому слову ';
     }
     if (lengthKeywords === 2) {
-      keywordsList.textContent = `${arrayCountKeys[0]} и ${arrayCountKeys[1]}`;
-      keywordsText.textContent = 'По ключевым словам ';
+      this.keywordsListtextContent = `${arrayCountKeys[0]} и ${arrayCountKeys[1]}`;
+      this.keywordsTexttextContent = 'По ключевым словам ';
     }
     if (lengthKeywords === 3) {
-      keywordsList.textContent = `${arrayCountKeys[0]}, ${arrayCountKeys[1]}, ${arrayCountKeys[2]}`;
-      keywordsText.textContent = 'По ключевым словам: ';
+      this.keywordsListtextContent = `${arrayCountKeys[0]}, ${arrayCountKeys[1]}, ${arrayCountKeys[2]}`;
+      this.keywordsTexttextContent = 'По ключевым словам: ';
     }
     if (lengthKeywords > 3) {
-      keywordsList.textContent = `${arrayCountKeys[0]}, ${arrayCountKeys[1]} и ${anotherKeywords} другим`;
-      keywordsText.textContent = 'По ключевым словам: ';
+      this.keywordsListtextContent = `${arrayCountKeys[0]}, ${arrayCountKeys[1]} и ${anotherKeywords} другим`;
+      this.keywordsTexttextContent = 'По ключевым словам: ';
     }
   }
 

@@ -8,6 +8,7 @@ export default class Popup {
   open() {
     this.form._clearContent(this.contentForm);
     this.domclass.classList.add('popup_is-opened');
+    this.domclass.querySelector('.error_api').textContent = '';
     //  eslint-disable-next-line no-restricted-globals
     this.form._submitButtonState(event, this.domclass);
     this._hanglerAdd();

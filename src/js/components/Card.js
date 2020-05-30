@@ -1,15 +1,17 @@
 export default class Card {
-  constructor(apiBackend, auth, dateToFormat, helpMessages) {
+  constructor(apiBackend, auth, dateToFormat, helpMessages, preCreate) {
     this.apiBackend = apiBackend;
     this.auth = auth;
     this.dateToFormat = dateToFormat;
     this.helpMessages = helpMessages;
+    this.preCreate = preCreate;
   }
 
   // создание элемента новостной карточки
-  create(keyword, image, title, text, date, source, link, container, cardid) {
+  create(keyword, imageSource, title, description, date, source, link, container, cardid) {
     const dateFormat = this.dateToFormat(date);
-
+    const image = this.preCreate.preCreateImage(imageSource);
+    const text = this.preCreate.preCreateText(description);
     const articleCard = document.createElement('div');
     articleCard.classList.add('news-list__card');
     articleCard.insertAdjacentHTML('afterbegin', `<div class="news-list__icon"></div>

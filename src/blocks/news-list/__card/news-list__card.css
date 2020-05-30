@@ -1,7 +1,7 @@
 .news-list__card {
     display: flex;
     flex-direction: column;
-    max-width: calc((100% - 32px)/3);
+    width: calc((100% - 32px)/3);
     max-height: 576px;
     background-color: #fff;
     border-radius: 16px;
@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 427px) and (max-width: 748px) {
     .news-list__card {
-        max-width: calc((100% - 32px)/2);
+        width: calc((100% - 32px)/2);
     }
 }
 

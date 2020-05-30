@@ -1,4 +1,3 @@
-const CLOSEICONS = Array.from(document.querySelectorAll('.popup__close'));
 const CONTAINER = document.querySelector('.news-list__cardlist');
 const HEADER_BUTTON = document.querySelector('.header__button');
 const LINK_REGISTRATION = document.querySelector('.popup__link-registration');
@@ -14,6 +13,6 @@ const NEWS_LISTS = {
 };
 
 export {
-  CLOSEICONS, CONTAINER, HEADER_BUTTON, LINK_REGISTRATION,
+  CONTAINER, HEADER_BUTTON, LINK_REGISTRATION,
   LINK_LOGIN, SEARCH_FORM, HEADER_BLOCK, NEWS_LISTS, POPUP_REDIRECT, POPUP_SUCCESS,
 };
