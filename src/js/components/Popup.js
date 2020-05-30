@@ -8,7 +8,8 @@ export default class Popup {
   open() {
     this.form._clearContent(this.contentForm);
     this.domclass.classList.add('popup_is-opened');
-    this.form._submitButtonState(this.domclass);
+    //  eslint-disable-next-line no-restricted-globals
+    this.form._submitButtonState(event, this.domclass);
     this._hanglerAdd();
   }
 
@@ -22,8 +23,8 @@ export default class Popup {
   _hanglerAdd() {
     this.domclass.querySelector('.popup__close').addEventListener('click', () => this.close());
     this.contentForm.addEventListener('submit', this.submitAction);
-    this.domclass.addEventListener('input', () => this.form._submitButtonState(this.domclass));
-    this.domclass.addEventListener('input', () => this.form._validateInputElement(this.domclass));
+    this.domclass.addEventListener('input', (event) => this.form._submitButtonState(event, this.domclass));
+    this.domclass.addEventListener('input', (event) => this.form._validateInputElement(event, this.domclass));
   }
 
   // удаление обработчика сабмита

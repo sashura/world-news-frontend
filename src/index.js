@@ -16,6 +16,7 @@ import Header from './js/components/Header';
 import Popup from './js/components/Popup';
 import Auth from './js/components/Auth';
 import { dateToFormat } from './js/utils/Date';
+import { helpMessages } from './js/constants/textConstants';
 
 const authorization = require('./js/constants/authorization');
 const backendData = require('./js/constants/backendData');
@@ -24,16 +25,16 @@ const form = new Form(errors);
 const auth = new Auth();
 const api = new ApiNews(authorization);
 
-const header = new Header(HEADER_BLOCK);
 const apiBackend = new ApiBackend(backendData);
-const card = new Card(api, apiBackend, auth, dateToFormat);
+const header = new Header(HEADER_BLOCK, apiBackend, auth);
+const card = new Card(apiBackend, auth, dateToFormat, helpMessages);
 const newsList = new NewsList(card, api, CONTAINER, NEWS_LISTS);
 const popupSignIn = new PopupSignIn(document.querySelector('.popup__login'), form, apiBackend, auth, card, header, newsList);
 const popupRegistration = new PopupRegistration(document.querySelector('.popup__createuser'), form, apiBackend, POPUP_SUCCESS);
 
 const popup = new Popup(form, apiBackend);
 
-const initial = new Initial(popupSignIn, popupRegistration, newsList, header);
+const initial = new Initial(popupSignIn, popupRegistration, newsList, header, auth, apiBackend);
 
 
-initial.setHandlers();
+initial.checkLogin();

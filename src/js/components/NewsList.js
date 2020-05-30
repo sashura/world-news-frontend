@@ -8,34 +8,42 @@ export default class NewsList {
 
   // получение готового массива DOM-элементов новостных карточек
   render(keyword) {
+    // eslint-disable-next-line
     event.preventDefault();
     this.NEWS_LISTS.inprogress.classList.add('news-list_is-opened');
     this.api.getNews(keyword)
       .then((data) => {
         if (data.totalResults === 0) {
-          this.newsNotFoundCreate();
+          this._newsNotFoundCreate();
+        } else {
+          this._newsListCreate(this.arrayNewsCreate(data.articles, keyword));
         }
-        const arrNews = [];
-        data.articles.forEach((item) => {
-          arrNews.push(
-            this.card.create(
-              keyword,
-              item.urlToImage,
-              item.title,
-              item.description,
-              item.publishedAt,
-              item.source.name,
-              item.url,
-            ),
-          );
-        });
-        return arrNews;
-      })
-      .then((arrNews) => this.newsListCreate(arrNews));
+      });
+  }
+
+
+  // получение готового массива DOM-элементов новостных карточек
+  arrayNewsCreate(data, keyword) {
+    const arrNews = [];
+    data.forEach((item) => {
+      arrNews.push(
+        this.card.create(
+          keyword,
+          item.urlToImage,
+          item.title,
+          item.description,
+          item.publishedAt,
+          item.source.name,
+          item.url,
+          this.container,
+        ),
+      );
+    });
+    return arrNews;
   }
 
   // отрисовка карточек на странице
-  newsListCreate(arrNews) {
+  _newsListCreate(arrNews) {
     arrNews.splice(this.container.childNodes.length, 3).forEach((news) => {
       this.NEWS_LISTS.inprogress.classList.remove('news-list_is-opened');
       this.container.insertAdjacentElement('beforeend', news);
@@ -49,7 +57,7 @@ export default class NewsList {
   }
 
   // блок информации - карточки не найдены
-  newsNotFoundCreate() {
+  _newsNotFoundCreate() {
     this.NEWS_LISTS.inprogress.classList.remove('news-list_is-opened');
     this.NEWS_LISTS.notfound.classList.add('news-list_is-opened');
   }

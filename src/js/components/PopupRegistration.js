@@ -12,7 +12,7 @@ export default class PopupRegistration extends Popup {
   }
 
   // регистрация
-  submitAction() {
+  submitAction(event) {
     event.preventDefault();
     const errorApi = this.domclass.querySelector('.error_api');
     this.apiBackend.registration(this.contentForm.elements.email.value,

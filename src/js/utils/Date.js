@@ -1,4 +1,4 @@
-import { monthes } from '../constants/monthes';
+import { monthes } from '../constants/textConstants';
 
 export const dateToFormat = (date) => {
   const dataNew = new Date(date);

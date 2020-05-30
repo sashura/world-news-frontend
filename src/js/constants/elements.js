@@ -5,7 +5,7 @@ const LINK_REGISTRATION = document.querySelector('.popup__link-registration');
 const LINK_LOGIN = document.querySelector('.popup__link-login');
 const POPUP_REDIRECT = document.querySelector('.popup__redirect-login');
 const SEARCH_FORM = document.querySelector('.search__form');
-const HEADER_BLOCK = document.querySelector('.header_main-page');
+const HEADER_BLOCK = document.querySelector('.header');
 const POPUP_SUCCESS = document.querySelector('.popup__successsignup');
 const NEWS_LISTS = {
   inprogress: document.querySelector('.news-list__content_searchinprogress'),

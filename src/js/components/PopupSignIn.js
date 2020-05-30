@@ -28,25 +28,25 @@ export default class PopupSignIn extends Popup {
         this.close();
         this.header.setLoginState(res.user);
         this.auth.saveToken(res.token);
-        this.removeButtonHangler();
+        this._removeButtonHangler();
         this.setUnloginHangler();
         if (this.newsList.checkCards() !== 0) {
           this.card.iconArrayState();
         }
       })
       .catch((err) => err.json())
-        .then((res) => {
-          errorApi.textContent = res.message;
-        });
+      .then((res) => {
+        errorApi.textContent = res.message;
+      });
   }
 
   // установка обработчика в незалогиненном состоянии - открытие попапа
-  setButtonHangler() {
+  _setButtonHangler() {
     this.buttonHeader.addEventListener('click', this.open);
   }
 
   // снятие обработчика открытия попапа логина
-  removeButtonHangler() {
+  _removeButtonHangler() {
     this.buttonHeader.removeEventListener('click', this.open);
   }
 
@@ -56,14 +56,14 @@ export default class PopupSignIn extends Popup {
   }
 
   // снятие обработчика в залогиненном состоянии - разлогинивание
-  removeUnloginHangler() {
+  _removeUnloginHangler() {
     this.buttonHeader.removeEventListener('click', this.setUnloginState);
   }
 
   // приведение хедера и кнопки открытия попапа в незалогиненное состояние
   setUnloginState() {
     this.header.setUnloginState();
-    this.setButtonHangler();
-    this.removeUnloginHangler();
+    this._setButtonHangler();
+    this._removeUnloginHangler();
   }
 }

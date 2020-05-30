@@ -1,4 +1,4 @@
-export const monthes = [
+const monthes = [
   'января',
   'февраля',
   'марта',
@@ -12,3 +12,10 @@ export const monthes = [
   'ноября',
   'декабря',
 ];
+
+const helpMessages = {
+  main: 'Войдите, чтобы удалять статьи',
+  saved: 'Убрать из сохраненных',
+};
+
+export { monthes, helpMessages };
