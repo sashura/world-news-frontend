@@ -8,7 +8,7 @@
   <meta name="author" content="Александра Захарова">
   <meta name="description" content="Поиск новостей">
   <meta name="keywords" content="новости, поиск, мир">
-  <link rel="stylesheet" href="main.84458fd9b921bef1207f.css">
+  <link rel="stylesheet" href="main.60408c1879e50529415f.css">
   <link rel="icon" href="./images/favicongr.svg">
   <title>World-news</title>
 </head>
@@ -27,10 +27,12 @@
               <a class="header__link header__link_main" href="./index.html">Главная</a>
               <div class="header__underline">_________</div>
             </div>
-            <div class="header__link-container">
-              <a class="header__link header__link_main" href="./savednews.html">Сохраненные статьи</a>
+              <a class="header__link header__link_main header__link_redirect-link" href="./savednews.html">Сохраненные статьи</a>
+            <div class="header__button header__button_main" id="buttonauth">
+                <div class="header__button_user-name">Авторизоваться</div>
+                <img class="header__button_icon" src="./images/logout_white.svg"
+                    alt="logout">
             </div>
-            <div class="header__button header__button_main">Авторизоваться</div>
           </div>
         </nav>
       </div>
@@ -47,120 +49,18 @@
       </div>
     </section>
   </div>
-  <section class="news-list wrap_root">
-    <div class="news-list__content_found news-list_is-opened">
+  <section class="news-list">
+    <div class="news-list__content_found wrap_root">
       <h2 class="news-list__title">Результаты поиска</h2>
-
-      <div class="news-list__cardlist">
-        <div class="news-list__card">
-          <div class="news-list__icon news-list__icon_mark-icon"></div>
-          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
-            <div class="news-list__help-message news-list__help-message_saved">
-              <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-            </div>
-            <div class="news-list__image-container">
-              <img class="news-list__image" src="./images/image.png" alt="ключевое слово">
-            </div>
-            <p class="news-list__date">2 августа, 2019</p>
-            <div class="news-list__text-container">
-              <h3 class="news-list__cardtitle">Национальное достояние – парки</h3>
-              <p class="news-list__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
-                здесь
-                начала складываться система национальных парков – охраняемых территорий, где и сегодня
-                каждый может приобщиться к природе.</p>
-              <div class="news-list__link">лента.ру</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="news-list__card">
-          <div class="news-list__icon news-list__icon_mark-icon"></div>
-          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
-            <div class="news-list__image-container">
-              <div class="news-list__help-message news-list__help-message_saved">
-                <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-              </div>
-              <img class="news-list__image" src="./images/image.png" alt="ключевое слово">
-            </div>
-            <p class="news-list__date">2 августа, 2019</p>
-            <div class="news-list__text-container">
-              <h3 class="news-list__cardtitle">Лесные огоньки: история одной фотографии</h3>
-              <p class="news-list__text">Фотограф отвлеклась от освещения суровой политической
-                реальности
-                Мексики, чтобы запечатлеть ускользающую красоту одного
-                из местных чудес природы.</p>
-              <div class="news-list__link">медуза</div>
-            </div>
-          </a>
-        </div>
-        <div class="news-list__card">
-          <div class="news-list__icon news-list__icon_mark-icon"></div>
-          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
-            <div class="news-list__image-container">
-              <div class="news-list__help-message news-list__help-message_saved">
-                <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-              </div>
-              <img class="news-list__image" src="./images/image.png" alt="ключевое слово">
-            </div>
-            <p class="news-list__date">2 августа, 2019</p>
-            <div class="news-list__text-container">
-              <h3 class="news-list__cardtitle">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-              <p class="news-list__text">Знаменитый фотограф снимает первозданные леса России, чтобы
-                рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
-                тайгу, где...</p>
-              <div class="news-list__link">риа</div>
-            </div>
-          </a>
-        </div>
-        <div class="news-list__card hidden">
-          <div class="news-list__icon news-list__icon_mark-icon"></div>
-          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
-            <div class="news-list__image-container">
-              <div class="news-list__help-message news-list__help-message_saved">
-                <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-              </div>
-              <img class="news-list__image" src="./images/image.png" alt="ключевое слово">
-            </div>
-            <p class="news-list__date">2 августа, 2019</p>
-            <div class="news-list__text-container">
-              <h3 class="news-list__cardtitle">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-              <p class="news-list__text">Знаменитый фотограф снимает первозданные леса России, чтобы
-                рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
-                тайгу, где...</p>
-              <div class="news-list__link">риа</div>
-            </div>
-          </a>
-        </div>
-        <div class="news-list__card hidden">
-
-          <div class="news-list__icon news-list__icon_mark-icon"></div>
-          <a class="news-list__linkout" href="http://www.lenta.ru" target="_blank">
-            <div class="news-list__image-container">
-              <div class="news-list__help-message news-list__help-message_saved">
-                <p class="news-list__help-message_textsaved">Войдите, чтобы сохранять статьи</p>
-              </div>
-              <img class="news-list__image" src="./images/image.png" alt="ключевое слово">
-            </div>
-            <p class="news-list__date">2 августа, 2019</p>
-            <div class="news-list__text-container">
-              <h3 class="news-list__cardtitle">Лесные огоньки: история одной фотографии</h3>
-              <p class="news-list__text">Фотограф отвлеклась от освещения суровой политической
-                реальности
-                Мексики, чтобы запечатлеть ускользающую красоту одного
-                из местных чудес природы.</p>
-              <div class="news-list__link">медуза</div>
-            </div>
-          </a>
-        </div>
-      </div>
+      <div class="news-list__cardlist"></div>
       <button class="button button_cardlist">Показать еще</button>
     </div>
-    <div class="news-list__content_notfound">
+    <div class="news-list__content_notfound wrap_root">
       <img src="./images/not-found_v1.svg" alt="not-found">
       <h3 class="news-list__content_notfound-title">Ничего не найдено</h3>
       <p class="news-list__content_notfound-message">К сожалению, по вашему запросу ничего не найдено</p>
     </div>
-    <div class="news-list__content_searchinprogress">
+    <div class="news-list__content_searchinprogress wrap_root">
       <div class="circle-preloader"></div>
       <p class="news-list__content_notfound-message">Идет поиск новостей...</p>
     </div>
@@ -188,13 +88,16 @@
       <form class="popup__form popup__login" name="login">
         <p class="popup__text">Email</p>
         <input class="popup__input" type="email" name="email" placeholder="Введите почту" required>
-        <span class="error" id="error">Вы начали вводить текст</span>
+        <span class="error error_open error-email" id="error"></span>
         <p class="popup__text">Пароль</p>
         <input class="popup__input" type="password" name="password" placeholder="Введите пароль" required>
-        <span></span>
-        <button class="button popup__button">Войти</button>
+        <span class="error error_open error-password"></span>
+        <div class="popup__button-container">
+          <span class="error error_open error_api"></span>
+          <button class="button popup__button" disabled>Войти</button>
+        </div>
       </form>
-      <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#createuser"
+      <p class="popup__text-bottom"><span>или </span><a class="popup__text popup__link-registration" href="#createuser"
           id="link-createuser">Зарегистрироваться</a> </p>
     </div>
   </div>
@@ -204,18 +107,20 @@
       <h3 class="popup__title">Регистрация</h3>
       <form class="popup__form popup__createuser" name="createuser">
         <p class="popup__text">Email</p>
-        <input class="popup__input" type="email" name="email" placeholder="Введите почту" required>
-        <span></span>
+        <input class="popup__input" type="email" name="email" placeholder="Введите почту" novalidate required>
+        <span class="error error_open error-email"> </span>
         <p class="popup__text">Пароль</p>
-        <input class="popup__input" type="password" name="password" placeholder="Введите пароль" required>
-        <span></span>
+        <input class="popup__input" type="password" name="password" placeholder="Введите пароль" novalidate required>
+        <span class="error error_open error-password"></span>
         <p class="popup__text">Имя</p>
-        <input class="popup__input" type="text" name="username" placeholder="Введите своё имя" required>
-        <span></span>
-        <span class="error error_open error_api">Такой пользователь уже зарегистрирован</span>
-        <button class="button popup__button">Зарегистрироваться</button>
+        <input class="popup__input" type="text" name="username" placeholder="Введите своё имя" novalidate required>
+        <span class="error error_open error-text"> </span>
+        <div class="popup__button-container">
+          <span class="error error_open error_api"></span>
+          <button class="button popup__button" disabled>Зарегистрироваться</button>
+        </div>
       </form>
-      <p class="popup__text-bottom"><span>или </span><a class="popup__text" href="#login" id="link-login">Войти</a></p>
+      <p class="popup__text-bottom"><span>или </span><a class="popup__text popup__link-login" href="#login" id="link-login">Войти</a></p>
     </div>
   </div>
   <div class="popup popup__successsignup">
@@ -240,7 +145,7 @@
       </div>
     </nav>
   </footer>
-  <script src="main.2d51d18443cd7436fa34.js"></script>
+  <script src="main.9334c3142ad6bdf8a995.js"></script>
 </body>
 
 </html>
