@@ -43,7 +43,8 @@ export default class SavedNewsList {
       .then((articlesArr) => {
         this._pageState(articlesArr);
       })
-      .catch(() => {
+      .catch((err) => {
+        console.log(err);
         document.querySelector('.info__savednews').textContent = ', у вас нет сохраненных статей';
         this.keywordsListtextContent = '';
         this.keywordsTexttextContent = '';
@@ -98,24 +99,24 @@ export default class SavedNewsList {
     const anotherKeywords = arrayCountKeys.length - 2;
 
     if (lengthKeywords === 0) {
-      this.keywordsListtextContent = '';
-      this.keywordsTexttextContent = '';
+      this.keywordsList.textContent = '';
+      this.keywordsText.textContent = '';
     }
     if (lengthKeywords === 1) {
-      this.keywordsListtextContent = `${arrayCountKeys[0]}`;
-      this.keywordsTexttextContent = 'По ключевому слову ';
+      this.keywordsList.textContent = `${arrayCountKeys[0]}`;
+      this.keywordsText.textContent = 'По ключевому слову ';
     }
     if (lengthKeywords === 2) {
-      this.keywordsListtextContent = `${arrayCountKeys[0]} и ${arrayCountKeys[1]}`;
-      this.keywordsTexttextContent = 'По ключевым словам ';
+      this.keywordsList.textContent = `${arrayCountKeys[0]} и ${arrayCountKeys[1]}`;
+      this.keywordsText.textContent = 'По ключевым словам ';
     }
     if (lengthKeywords === 3) {
-      this.keywordsListtextContent = `${arrayCountKeys[0]}, ${arrayCountKeys[1]}, ${arrayCountKeys[2]}`;
-      this.keywordsTexttextContent = 'По ключевым словам: ';
+      this.keywordsList.textContent = `${arrayCountKeys[0]}, ${arrayCountKeys[1]}, ${arrayCountKeys[2]}`;
+      this.keywordsText.textContent = 'По ключевым словам: ';
     }
     if (lengthKeywords > 3) {
-      this.keywordsListtextContent = `${arrayCountKeys[0]}, ${arrayCountKeys[1]} и ${anotherKeywords} другим`;
-      this.keywordsTexttextContent = 'По ключевым словам: ';
+      this.keywordsList.textContent = `${arrayCountKeys[0]}, ${arrayCountKeys[1]} и ${anotherKeywords} другим`;
+      this.keywordsText.textContent = 'По ключевым словам: ';
     }
   }
 
