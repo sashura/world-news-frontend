@@ -1,0 +1,13 @@
+@import url(./_open/error_open.css);
+@import url(./_api/error_api.css);
+
+.error {
+    display: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+
+}

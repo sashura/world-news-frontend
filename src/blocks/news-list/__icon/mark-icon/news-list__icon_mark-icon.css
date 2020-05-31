@@ -1,0 +1,11 @@
+.news-list__icon_mark-icon {
+    background-image: url(../../../../images/mark.svg);
+}
+
+.news-list__icon_mark-icon:hover {
+    background-image: url(../../../../images/mark_hover.svg);
+}
+
+.news-list__icon_marc-icon:hover {
+    background-image: url(../../../../images/bookmark.png);
+}

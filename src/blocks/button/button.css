@@ -1,0 +1,18 @@
+@import url(../button/_search/button_search.css);
+@import url(../button/_card-list/button_cardlist.css);
+
+.button {
+    border-radius: 100px;
+    display: block;
+    cursor: pointer;
+  }
+
+.button:active {
+  border: none;
+  outline: none;
+}
+
+.button:focus {
+  border: none;
+  outline: none;
+}

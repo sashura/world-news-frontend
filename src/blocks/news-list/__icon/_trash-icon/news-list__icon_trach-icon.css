@@ -1,0 +1,8 @@
+.news-list__icon_trash-icon {
+    background-image: url(../../../../images/trash.svg);
+}
+
+
+.news-list__icon_trash-icon:hover {
+    background-image: url(../../../../images/trash_hover.svg);
+}

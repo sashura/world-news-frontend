@@ -1,0 +1,20 @@
+.search__form {
+    display: flex;
+    border-radius: 100px;
+    background-color: #fff;
+    justify-content: space-between;
+    position: relative;
+}
+
+@media screen and (min-width:521px) {
+    .search__form {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .search__form {
+        background-color: transparent;
+        flex-direction: column;
+    }
+}

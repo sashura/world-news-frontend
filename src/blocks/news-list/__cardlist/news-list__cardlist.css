@@ -1,0 +1,12 @@
+.news-list__cardlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 426px) {
+    .news-list__cardlist {
+        justify-content: center;
+    }
+}

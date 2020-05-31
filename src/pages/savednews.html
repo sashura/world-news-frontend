@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Александра Захарова">
+    <meta name="description" content="Поиск новостей">
+    <meta name="keywords" content="новости, поиск, мир">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.savednews.css %>">
+    <link rel="icon" href="<%=require('../images/favicongr.svg').default%>">
+    <title>World-news</title>
+</head>
+
+<body>
+    <header class="header wrap_header header_savenews">
+        <div class="header__title-block">
+            <h1 class="header__title header__title_savenews">NewsExplorer</h1>
+            <div class="header__menu-icon header__menu-icon_black"></div>
+        </div>
+        <div class="header__nav-block header__nav-block_white wrap_background_nav-block_savenews">
+            <nav class="header__navigation header__navigation_white">
+                <div class="header__nav-list">
+                    <a class="header__link header__link_savenews header__link_redirect-link" href="index.html">Главная</a>
+                    <div>
+                        <a class="header__link header__link_savenews" href="./savednews.html">Сохраненные новости</a>
+                        <div class="header__underline header__underline_savenews">________________________</div>
+                    </div>
+                    <div class="header__button header__button_savenews">
+                        <div class="header__button_user-name"></div>
+                        <img class="header__button_icon" src="<%=require('../images/logout_black.svg').default%>"
+                            alt="logout">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="info wrap_root">
+        <h3 class="info__subtitle">Сохранённые статьи</h3>
+        <h2 class="info__title"><span class="info__user-name">Грета</span><span class="info__savednews"></span></h2>
+        <p class="info__keywords"><span class="info__keywords-text"></span><span class="info__keywords-list"></span></p>
+    </section>
+    <section class="news-list wrap_root news-list__content_found">
+      <div class="news-list__cardlist news-list__cardlist_savednews"></div>
+    </section>
+    <footer class="footer wrap_footer">
+        <p class="footer__about">&copy; 2020 Supersite, Powered by News API</p>
+        <nav class="footer__navigation">
+            <nav class=footer__nav-list>
+                <a class="footer__link" href="index.html">Главная</a>
+                <a class="footer__link" href="http://yandex.praktikum.ru">Яндекс.Практикум</a>
+            </nav>
+            <div class="footer__social-media">
+                <a class="footer__social-media-icon" href="https://github.com/sashura/world-news-frontend"
+                    target="_blank"><img class="footer__icon-image" src="images/github.svg" alt="github"></a>
+                <a class="footer__social-media-icon" href="http://facebook.com" target="_blank"><img
+                        class="footer__icon-image" src="images/facebook.svg" alt="facebook"></a>
+            </div>
+        </nav>
+    </footer>
+    <script src="<%= htmlWebpackPlugin.files.chunks.savednews.entry %>"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.wrap_header {
+    padding: 19px 104px 13px 104px;
+}
+
+@media screen and (min-width: 479px) and (max-width: 920px) {
+    .wrap_header {
+        padding: 14px 40px 12px 40px;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .wrap_header {
+        padding: 0 16px 0 16px;
+    }
+}

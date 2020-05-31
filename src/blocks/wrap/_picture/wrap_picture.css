@@ -1,0 +1,7 @@
+.wrap_picture {
+    background-image: url(../../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.png);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    max-width: 100vw;
+}

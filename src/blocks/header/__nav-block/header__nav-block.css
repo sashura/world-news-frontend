@@ -1,0 +1,14 @@
+@import url(./_is-opened/header__nav-block_is-opened.css);
+
+.header__nav-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width: 540px) {
+    .header__nav-block {
+        display: none;
+    }
+}

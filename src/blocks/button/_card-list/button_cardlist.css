@@ -1,0 +1,33 @@
+.button_cardlist {
+    width: 288px;
+    height: 64px;
+    background-color: #FFFFFF;
+    border-radius: 80px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 56px auto 0 auto;
+}
+
+.button_cardlist:hover {
+    opacity: 0.9;
+}
+
+.button_cardlist:active {
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 780px) and (min-width: 428px) {
+    .button_cardlist {
+        margin-top: 22px;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .button_cardlist {
+        margin-top: 15px;
+    }
+}

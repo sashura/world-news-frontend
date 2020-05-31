@@ -1,0 +1,11 @@
+.news-list__content_found.news-list_is-opened {
+    display: block;
+}
+
+.news-list__content_notfound.news-list_is-opened {
+    display: flex;
+}
+
+.news-list__content_searchinprogress.news-list_is-opened {
+    display: flex;
+}
