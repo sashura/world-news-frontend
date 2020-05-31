@@ -10,14 +10,16 @@ import {
 import Header from '../js/components/Header';
 import SavedNewsList from '../js/components/SavedNewsList';
 import { helpMessages } from '../js/constants/textConstants';
+import PreCreate from '../js/utils/PreCreate';
 
 
 const backendData = require('../js/constants/backendData');
 
+const preCreate = new PreCreate();
 const auth = new Auth();
 const apiBackend = new ApiBackend(backendData);
-const header = new Header(HEADER_BLOCK, apiBackend);
-const card = new Card(apiBackend, auth, dateToFormat, helpMessages);
+const header = new Header(HEADER_BLOCK, apiBackend, auth);
+const card = new Card(apiBackend, auth, dateToFormat, helpMessages, preCreate);
 const savedNewsList = new SavedNewsList(
   apiBackend, card, CONTAINER, NEWS_LISTS, HEADER_BUTTON, auth,
 );
