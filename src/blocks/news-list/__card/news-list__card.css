@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 426px) {
     .news-list__card {
-        max-width: 288px;
+        width: 288px;
     }
 }
 
