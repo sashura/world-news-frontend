@@ -43,8 +43,7 @@ export default class SavedNewsList {
       .then((articlesArr) => {
         this._pageState(articlesArr);
       })
-      .catch((err) => {
-        console.log(err);
+      .catch(() => {
         document.querySelector('.info__savednews').textContent = ', у вас нет сохраненных статей';
         this.keywordsListtextContent = '';
         this.keywordsTexttextContent = '';
